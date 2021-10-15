@@ -1,0 +1,3952 @@
+<html>
+<head>
+<title>Automation Tests</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<style>
+body {
+    background-color: black;
+    width: 100%;
+    height: 100% !important;
+}
+
+div#logo {
+    padding: 19px 0px 22px 27px;
+}
+
+div#main {
+    padding: 0px 15px 10px 12px;
+}
+
+.collapse.show {
+  visibility: visible;
+}
+
+button.accordion-button {
+background-image:url(https://www.turfsport.co.za/wp-content/uploads/2019/07/background-combined-2.jpg?id=8934) !important;
+  
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #e7f1ff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    font-size: medium;
+    font-weight: bold;
+}
+
+button.accordion-button.collapsed {
+    color: white;
+    background-color: #e7f1ff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+    font-size: medium;
+    font-weight: bold;
+}
+
+::after {
+content: none !important;
+}
+
+li {
+    margin: 0px 0px 0px 21px;
+}
+
+span {
+    background: black;
+    margin: 0px 0px 0px 299px;
+    width: auto;
+    height: 22px;
+    font-size: small;
+    font-weight: bold;
+    position: absolute;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 6%;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<div id="logo">
+<img src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/19000991574/logo/25C4JHSjh1t4LsWHHRaOgM535rFXMHDgDQ.png"/>
+</div>
+<div id="main">
+<ol>
+<div class="accordion" id="accordionApiHorseRacingTests">
+  <div class="accordion-item">  
+  <h2 class="accordion-header" id="ApiHorseRacingTests">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ApiHorseRacingTestsCtrl" aria-expanded="false" aria-controls="ApiHorseRacingTestsCtrl">
+       <li> ApiHorseRacingTests</li>
+	   	<span class="badge badge-dark" id="ApiHorseRacingTests_Span"></span>
+      </button>
+    </h2>
+    <div id="ApiHorseRacingTestsCtrl" class="accordion-collapse collapse" aria-labelledby="ApiHorseRacingTests" data-bs-parent="#accordionApiHorseRacingTests">
+
+ <div class="accordion-body">
+ <ol id="ApiHorseRacingTests1">
+ 
+<div class="accordion" id="accordionAbandon_Horse_Racing_Fixture_Bets_Are_Scratched">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Abandon_Horse_Racing_Fixture_Bets_Are_Scratched">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Abandon_Horse_Racing_Fixture_Bets_Are_ScratchedCtrl" 
+	  aria-expanded="true" aria-controls="Abandon_Horse_Racing_Fixture_Bets_Are_ScratchedCtrl">
+        <li>Abandon_Horse_Racing_Fixture_Bets_Are_Scratched</li>
+      </button>
+    </h2>
+    <div id="Abandon_Horse_Racing_Fixture_Bets_Are_ScratchedCtrl" class="accordion-collapse collapse" aria-labelledby="Abandon_Horse_Racing_Fixture_Bets_Are_Scratched" 
+	data-bs-parent="#accordionAbandon_Horse_Racing_Fixture_Bets_Are_Scratched">
+      <div class="accordion-body">
+Place a bet on a horse race, abandon said race, then abandon the race and ensure that the bet is scratched.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionHR_Override_Win_Price_And_Check_Place_Price">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="HR_Override_Win_Price_And_Check_Place_Price">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#HR_Override_Win_Price_And_Check_Place_PriceCtrl" 
+	  aria-expanded="true" aria-controls="HR_Override_Win_Price_And_Check_Place_PriceCtrl">
+       <li> HR_Override_Win_Price_And_Check_Place_Price</li>
+      </button>
+    </h2>
+    <div id="HR_Override_Win_Price_And_Check_Place_PriceCtrl" class="accordion-collapse collapse" aria-labelledby="HR_Override_Win_Price_And_Check_Place_Price" 
+	data-bs-parent="#accordionHR_Override_Win_Price_And_Check_Place_Price">
+      <div class="accordion-body">
+Override the win market price of a horse racing market and check that the place market price changes accordingly.
+</div>
+</div>
+</div></div>
+<div class="accordion" id="accordionJackpot">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Jackpot">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#JackpotCtrl" 
+	  aria-expanded="true" aria-controls="JackpotCtrl">
+       <li>Jackpot</li>
+      </button>
+    </h2>
+    <div id="JackpotCtrl" class="accordion-collapse collapse" aria-labelledby="Jackpot" 
+	data-bs-parent="#accordionJackpot">
+      <div class="accordion-body">
+No method information provided.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionLay_Place_Bet_As_Winning_Bet_And_Calculate_Net_Amount">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Lay_Place_Bet_As_Winning_Bet_And_Calculate_Net_Amount">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Lay_Place_Bet_As_Winning_Bet_And_Calculate_Net_AmountCtrl" 
+	  aria-expanded="true" aria-controls="Lay_Place_Bet_As_Winning_Bet_And_Calculate_Net_AmountCtrl">
+       <li>Lay_Place_Bet_As_Winning_Bet_And_Calculate_Net_Amount</li>
+      </button>
+    </h2>
+    <div id="Lay_Place_Bet_As_Winning_Bet_And_Calculate_Net_AmountCtrl" class="accordion-collapse collapse" aria-labelledby="Lay_Place_Bet_As_Winning_Bet_And_Calculate_Net_Amount" 
+	data-bs-parent="#accordionLay_Place_Bet_As_Winning_Bet_And_Calculate_Net_Amount">
+      <div class="accordion-body">
+Lay a "Place" bet and result it as winning and ensure the winnings are the correct amount relative to the win price.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionOpenBetPlaceAccumulator">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="OpenBetPlaceAccumulator">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#OpenBetPlaceAccumulatorCtrl" 
+	  aria-expanded="true" aria-controls="OpenBetPlaceAccumulatorCtrl">
+       <li>OpenBetPlaceAccumulator</li>
+      </button>
+    </h2>
+    <div id="OpenBetPlaceAccumulatorCtrl" class="accordion-collapse collapse" aria-labelledby="OpenBetPlaceAccumulator" 
+	data-bs-parent="#accordionOpenBetPlaceAccumulator">
+      <div class="accordion-body">
+No method information provided.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionOpenBetSwinger">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="OpenBetSwinger">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#OpenBetSwingerCtrl" 
+	  aria-expanded="true" aria-controls="OpenBetSwingerCtrl">
+       <li>OpenBetSwinger</li>
+      </button>
+    </h2>
+    <div id="OpenBetSwingerCtrl" class="accordion-collapse collapse" aria-labelledby="OpenBetSwinger" 
+	data-bs-parent="#accordionOpenBetSwinger">
+      <div class="accordion-body">
+Lay a swinger bet, then result as a winner. Then Check ticket to ensure a win.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionOpenBetTrifectaBoxed">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="OpenBetTrifectaBoxed">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#OpenBetTrifectaBoxedCtrl" 
+	  aria-expanded="true" aria-controls="OpenBetTrifectaBoxedCtrl">
+       <li>OpenBetTrifectaBoxed</li>
+      </button>
+    </h2>
+    <div id="OpenBetTrifectaBoxedCtrl" class="accordion-collapse collapse" aria-labelledby="OpenBetTrifectaBoxed" 
+	data-bs-parent="#accordionOpenBetTrifectaBoxed">
+      <div class="accordion-body">
+Boxed Trifecta bet, with resulting.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionOpenBetTrifectaFloatingBanker">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="OpenBetTrifectaFloatingBanker">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#OpenBetTrifectaFloatingBankerCtrl" 
+	  aria-expanded="true" aria-controls="OpenBetTrifectaFloatingBankerCtrl">
+       <li>OpenBetTrifectaFloatingBanker</li>
+      </button>
+    </h2>
+    <div id="OpenBetTrifectaFloatingBankerCtrl" class="accordion-collapse collapse" aria-labelledby="OpenBetTrifectaFloatingBanker" 
+	data-bs-parent="#accordionOpenBetTrifectaFloatingBanker">
+      <div class="accordion-body">
+Trifecta bet using a Floating Banker.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionOpenBetWinningBoxedSwingerRefunds">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="OpenBetWinningBoxedSwingerRefunds">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#OpenBetWinningBoxedSwingerRefundsCtrl" 
+	  aria-expanded="true" aria-controls="OpenBetWinningBoxedSwingerRefundsCtrl">
+       <li>OpenBetWinningBoxedSwingerRefunds</li>
+      </button>
+    </h2>
+    <div id="OpenBetWinningBoxedSwingerRefundsCtrl" class="accordion-collapse collapse" aria-labelledby="OpenBetWinningBoxedSwingerRefunds" 
+	data-bs-parent="#accordionOpenBetWinningBoxedSwingerRefunds">
+      <div class="accordion-body">
+swinger bet with refunds.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionSingle_Winning_Bet_With_Clerk_Stretch_With_Scratch_Deduction">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Single_Winning_Bet_With_Clerk_Stretch_With_Scratch_Deduction">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Single_Winning_Bet_With_Clerk_Stretch_With_Scratch_DeductionCtrl" 
+	  aria-expanded="true" aria-controls="Single_Winning_Bet_With_Clerk_Stretch_With_Scratch_DeductionCtrl">
+       <li>Single_Winning_Bet_With_Clerk_Stretch_With_Scratch_Deduction</li>
+      </button>
+    </h2>
+    <div id="Single_Winning_Bet_With_Clerk_Stretch_With_Scratch_DeductionCtrl" class="accordion-collapse collapse" aria-labelledby="Single_Winning_Bet_With_Clerk_Stretch_With_Scratch_Deduction" 
+	data-bs-parent="#accordionSingle_Winning_Bet_With_Clerk_Stretch_With_Scratch_Deduction">
+      <div class="accordion-body">
+Place a single horse racing bet with a clerk stretch, then scratch the ticket. This test also ensures that the scratch deduction is correct.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionSingle_Winning_HR_Bet_With_a_Scratching_Deduction">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Single_Winning_HR_Bet_With_a_Scratching_Deduction">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Single_Winning_HR_Bet_With_a_Scratching_DeductionCtrl" 
+	  aria-expanded="true" aria-controls="Single_Winning_HR_Bet_With_a_Scratching_DeductionCtrl">
+       <li>Single_Winning_HR_Bet_With_a_Scratching_Deduction</li>
+      </button>
+    </h2>
+    <div id="Single_Winning_HR_Bet_With_a_Scratching_DeductionCtrl" class="accordion-collapse collapse" aria-labelledby="Single_Winning_HR_Bet_With_a_Scratching_Deduction" 
+	data-bs-parent="#Single_Winning_HR_Bet_With_a_Scratching_Deduction">
+      <div class="accordion-body">
+Place a "Win" market bet, then scratch the bet and ensure it matches the scratch deduction..
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionTake_Back_Bet_Permission_Place_Single">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Take_Back_Bet_Permission_Place_Single">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Take_Back_Bet_Permission_Place_SingleCtrl" 
+	  aria-expanded="true" aria-controls="Take_Back_Bet_Permission_Place_SingleCtrl">
+       <li>Take_Back_Bet_Permission_Place_Single</li>
+      </button>
+    </h2>
+    <div id="Take_Back_Bet_Permission_Place_SingleCtrl" class="accordion-collapse collapse" aria-labelledby="Take_Back_Bet_Permission_Place_Single" 
+	data-bs-parent="#Take_Back_Bet_Permission_Place_Single">
+      <div class="accordion-body">
+TakeBack Single bet
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionTakeBet_Filter_on_BetReport">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="TakeBet_Filter_on_BetReport">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#TakeBet_Filter_on_BetReportCtrl" 
+	  aria-expanded="true" aria-controls="TakeBet_Filter_on_BetReportCtrl">
+       <li>TakeBet_Filter_on_BetReport</li>
+      </button>
+    </h2>
+    <div id="TakeBet_Filter_on_BetReportCtrl" class="accordion-collapse collapse" aria-labelledby="TakeBet_Filter_on_BetReport" 
+	data-bs-parent="#TakeBet_Filter_on_BetReport">
+      <div class="accordion-body">
+TakeBack bet filter on Bet Report.
+</div>
+</div>
+</div>
+</div>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionApiLottoTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="ApiLottoTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ApiLottoTestsCtrl" aria-expanded="false" aria-controls="ApiLottoTestsCtrl">
+        <li>ApiLottoTests</li>
+			<span class="badge badge-dark" id="ApiLottoTests_Span"></span>
+      </button>
+    </h2>
+    <div id="ApiLottoTestsCtrl" class="accordion-collapse collapse" aria-labelledby="ApiLottoTests" data-bs-parent="#accordionApiLottoTests">
+
+ <div class="accordion-body">
+ <ol id="ApiLottoTests1">
+ 
+<div class="accordion" id="accordionAbandonLottoDrawAnEnsureBetsAreScratched">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="AbandonLottoDrawAnEnsureBetsAreScratched">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#AbandonLottoDrawAnEnsureBetsAreScratchedCtrl" 
+	  aria-expanded="true" aria-controls="AbandonLottoDrawAnEnsureBetsAreScratchedCtrl">
+        <li>AbandonLottoDrawAnEnsureBetsAreScratched</li>
+      </button>
+    </h2>
+    <div id="AbandonLottoDrawAnEnsureBetsAreScratchedCtrl" class="accordion-collapse collapse" aria-labelledby="AbandonLottoDrawAnEnsureBetsAreScratched" 
+	data-bs-parent="#accordionAbandonLottoDrawAnEnsureBetsAreScratched">
+      <div class="accordion-body">
+Abandons a created Lotto draw and ensures that the bet taken on the fixture is scratched.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionClerkCanExceedFloorCashLimitWhenBranchIsSetToAllowBetsOverTheFloorLimit">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="ClerkCanExceedFloorCashLimitWhenBranchIsSetToAllowBetsOverTheFloorLimit">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ClerkCanExceedFloorCashLimitWhenBranchIsSetToAllowBetsOverTheFloorLimitCtrl" 
+	  aria-expanded="true" aria-controls="ClerkCanExceedFloorCashLimitWhenBranchIsSetToAllowBetsOverTheFloorLimitCtrl">
+        <li>ClerkCanExceedFloorCashLimitWhenBranchIsSetToAllowBetsOverTheFloorLimit</li>
+      </button>
+    </h2>
+    <div id="ClerkCanExceedFloorCashLimitWhenBranchIsSetToAllowBetsOverTheFloorLimitCtrl" class="accordion-collapse collapse" aria-labelledby="ClerkCanExceedFloorCashLimitWhenBranchIsSetToAllowBetsOverTheFloorLimit" 
+	data-bs-parent="#accordionClerkCanExceedFloorCashLimitWhenBranchIsSetToAllowBetsOverTheFloorLimit">
+      <div class="accordion-body">
+Clerk can exceed floor cash limit when branch is set to allow bets over the floor limit.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionClerkCannotExceedFloorCashLimitWhenBranchIsSetToStopBetsOverTheFloorLimit">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="ClerkCannotExceedFloorCashLimitWhenBranchIsSetToStopBetsOverTheFloorLimit">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ClerkCannotExceedFloorCashLimitWhenBranchIsSetToStopBetsOverTheFloorLimitCtrl" 
+	  aria-expanded="true" aria-controls="ClerkCannotExceedFloorCashLimitWhenBranchIsSetToStopBetsOverTheFloorLimitCtrl">
+        <li>ClerkCannotExceedFloorCashLimitWhenBranchIsSetToStopBetsOverTheFloorLimit</li>
+      </button>
+    </h2>
+    <div id="ClerkCannotExceedFloorCashLimitWhenBranchIsSetToStopBetsOverTheFloorLimitCtrl" class="accordion-collapse collapse" aria-labelledby="ClerkCannotExceedFloorCashLimitWhenBranchIsSetToStopBetsOverTheFloorLimit" 
+	data-bs-parent="#accordionClerkCannotExceedFloorCashLimitWhenBranchIsSetToStopBetsOverTheFloorLimit">
+      <div class="accordion-body">
+No method information provided.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionClerkIsDisplayedAsOverTheFloorLimitOnTheCashDashboard">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="ClerkIsDisplayedAsOverTheFloorLimitOnTheCashDashboard">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ClerkIsDisplayedAsOverTheFloorLimitOnTheCashDashboardCtrl" 
+	  aria-expanded="true" aria-controls="ClerkIsDisplayedAsOverTheFloorLimitOnTheCashDashboardCtrl">
+        <li>ClerkIsDisplayedAsOverTheFloorLimitOnTheCashDashboard</li>
+      </button>
+    </h2>
+    <div id="ClerkIsDisplayedAsOverTheFloorLimitOnTheCashDashboardCtrl" class="accordion-collapse collapse" aria-labelledby="ClerkIsDisplayedAsOverTheFloorLimitOnTheCashDashboard" 
+	data-bs-parent="#accordionClerkIsDisplayedAsOverTheFloorLimitOnTheCashDashboard">
+      <div class="accordion-body">
+Clerks can exceed floor cash limit and this is displayed in the dashboard.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionCloseLottoDraw">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CloseLottoDraw">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CloseLottoDrawCtrl" 
+	  aria-expanded="true" aria-controls="CloseLottoDrawCtrl">
+        <li>CloseLottoDraw</li>
+      </button>
+    </h2>
+    <div id="CloseLottoDrawCtrl" class="accordion-collapse collapse" aria-labelledby="CloseLottoDraw" 
+	data-bs-parent="#accordionCloseLottoDraw">
+      <div class="accordion-body">
+Suspends an active lotto draw.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionPlace_Lotto_Bet_In_Gauteng_Proxy_Branch">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place_Lotto_Bet_In_Gauteng_Proxy_Branch">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place_Lotto_Bet_In_Gauteng_Proxy_BranchCtrl" 
+	  aria-expanded="true" aria-controls="Place_Lotto_Bet_In_Gauteng_Proxy_BranchCtrl">
+        <li>Place_Lotto_Bet_In_Gauteng_Proxy_Branch</li>
+      </button>
+    </h2>
+    <div id="Place_Lotto_Bet_In_Gauteng_Proxy_BranchCtrl" class="accordion-collapse collapse" aria-labelledby="Place_Lotto_Bet_In_Gauteng_Proxy_Branch" 
+	data-bs-parent="#accordionPlace_Lotto_Bet_In_Gauteng_Proxy_Branch">
+      <div class="accordion-body">
+Suspends an active lotto draw.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionPlaceAndResultLottoCustomBet">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="PlaceAndResultLottoCustomBet">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#PlaceAndResultLottoCustomBetCtrl" 
+	  aria-expanded="true" aria-controls="PlaceAndResultLottoCustomBetCtrl">
+        <li>PlaceAndResultLottoCustomBet</li>
+      </button>
+    </h2>
+    <div id="PlaceAndResultLottoCustomBetCtrl" class="accordion-collapse collapse" aria-labelledby="PlaceAndResultLottoCustomBetCtrl" 
+	data-bs-parent="#PlaceAndResultLottoCustomBetCtrl">
+      <div class="accordion-body">
+Place and result a bet on a custom market lotto.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionRedeem_Lotto_Quickbet">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Redeem_Lotto_Quickbet">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Redeem_Lotto_QuickbetCtrl" 
+	  aria-expanded="true" aria-controls="Redeem_Lotto_QuickbetCtrl">
+        <li>Redeem_Lotto_Quickbet</li>
+      </button>
+    </h2>
+    <div id="Redeem_Lotto_QuickbetCtrl" class="accordion-collapse collapse" aria-labelledby="Redeem_Lotto_QuickbetCtrl" 
+	data-bs-parent="#Redeem_Lotto_QuickbetCtrl">
+      <div class="accordion-body">
+Prepare a lotto quickbet and then place the bet using the prepared betslip, ensuring it is marked as a quickbet.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionRefundLottoDrawAfter">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RefundLottoDrawAfter">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RefundLottoDrawAfterCtrl" 
+	  aria-expanded="true" aria-controls="RefundLottoDrawAfterCtrl">
+        <li>RefundLottoDrawAfter</li>
+      </button>
+    </h2>
+    <div id="RefundLottoDrawAfterCtrl" class="accordion-collapse collapse" aria-labelledby="RefundLottoDrawAfterCtrl" 
+	data-bs-parent="#RefundLottoDrawAfterCtrl">
+      <div class="accordion-body">
+Refunds the lotto draw after.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionRefundLottoDrawBefore">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RefundLottoDrawBefore">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RefundLottoDrawBeforeCtrl" 
+	  aria-expanded="true" aria-controls="RefundLottoDrawBeforeCtrl">
+        <li>RefundLottoDrawBefore</li>
+      </button>
+    </h2>
+    <div id="RefundLottoDrawBeforeCtrl" class="accordion-collapse collapse" aria-labelledby="RefundLottoDrawBeforeCtrl" 
+	data-bs-parent="#RefundLottoDrawBeforeCtrl">
+      <div class="accordion-body">
+Refunds the lotto draw before.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionRevertLottoDraw">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RevertLottoDraw">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RevertLottoDrawCtrl" 
+	  aria-expanded="true" aria-controls="RevertLottoDrawCtrl">
+        <li>RevertLottoDraw</li>
+      </button>
+    </h2>
+    <div id="RevertLottoDrawCtrl" class="accordion-collapse collapse" aria-labelledby="RevertLottoDrawCtrl" 
+	data-bs-parent="#RevertLottoDrawCtrl">
+      <div class="accordion-body">
+Revert a Resulted Draw
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="RevertLottoDrawAndEnsureBetIsNotResulted">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RevertLottoDrawAndEnsureBetIsNotResulted">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RevertLottoDrawAndEnsureBetIsNotResultedCtrl" 
+	  aria-expanded="true" aria-controls="RevertLottoDrawAndEnsureBetIsNotResultedCtrl">
+        <li>RevertLottoDrawAndEnsureBetIsNotResulted</li>
+      </button>
+    </h2>
+    <div id="RevertLottoDrawAndEnsureBetIsNotResultedCtrl" class="accordion-collapse collapse" aria-labelledby="RevertLottoDrawAndEnsureBetIsNotResultedCtrl" 
+	data-bs-parent="#RevertLottoDrawAndEnsureBetIsNotResultedCtrl">
+      <div class="accordion-body">
+Revert a Result and ensure the bet is not resulted.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="T16981_PotentialPayoutRounding">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="T16981_PotentialPayoutRounding">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#T16981_PotentialPayoutRoundingCtrl" 
+	  aria-expanded="true" aria-controls="T16981_PotentialPayoutRoundingCtrl">
+        <li>T16981_PotentialPayoutRounding</li>
+      </button>
+    </h2>
+    <div id="T16981_PotentialPayoutRoundingCtrl" class="accordion-collapse collapse" aria-labelledby="T16981_PotentialPayoutRoundingCtrl" 
+	data-bs-parent="#T16981_PotentialPayoutRoundingCtrl">
+      <div class="accordion-body">
+Company's currency minimum denomination is set to 0.1, then a lotto bet is placed on a market with a price with multiple decimals. The test verifies that the potential payout is rounded and the payout per bet is unrounded.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="T16981_PotentialPayoutRounding">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="T16981_PotentialPayoutRounding">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#T16981_PotentialPayoutRoundingCtrl" 
+	  aria-expanded="true" aria-controls="T16981_PotentialPayoutRoundingCtrl">
+        <li>T16981_PotentialPayoutRounding</li>
+      </button>
+    </h2>
+    <div id="T16981_PotentialPayoutRoundingCtrl" class="accordion-collapse collapse" aria-labelledby="T16981_PotentialPayoutRoundingCtrl" 
+	data-bs-parent="#T16981_PotentialPayoutRoundingCtrl">
+      <div class="accordion-body">
+Company's currency minimum denomination is set to 0.1, then a lotto bet is placed on a market with a price with multiple decimals. The test verifies that the potential payout is rounded and the payout per bet is unrounded.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="TieredLottoPayoutsInBetReport">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="TieredLottoPayoutsInBetReport">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#TieredLottoPayoutsInBetReportCtrl" 
+	  aria-expanded="true" aria-controls="TieredLottoPayoutsInBetReportCtrl">
+        <li>TieredLottoPayoutsInBetReport</li>
+      </button>
+    </h2>
+    <div id="TieredLottoPayoutsInBetReportCtrl" class="accordion-collapse collapse" aria-labelledby="TieredLottoPayoutsInBetReportCtrl" 
+	data-bs-parent="#TieredLottoPayoutsInBetReportCtrl">
+      <div class="accordion-body">
+Ensure that the Bet Report returns tiered payouts. The tiers are acquired from the test data JSON file.</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="TieredLottoPayoutsInFieldSheet">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="TieredLottoPayoutsInFieldSheet">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#TieredLottoPayoutsInFieldSheetCtrl" 
+	  aria-expanded="true" aria-controls="TieredLottoPayoutsInFieldSheetCtrl">
+        <li>TieredLottoPayoutsInFieldSheet</li>
+      </button>
+    </h2>
+    <div id="TieredLottoPayoutsInFieldSheetCtrl" class="accordion-collapse collapse" aria-labelledby="TieredLottoPayoutsInFieldSheetCtrl" 
+	data-bs-parent="#TieredLottoPayoutsInFieldSheetCtrl">
+      <div class="accordion-body">
+17877
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="TieredLottoPayoutsInTaxReport">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="TieredLottoPayoutsInTaxReport">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#TieredLottoPayoutsInTaxReportCtrl" 
+	  aria-expanded="true" aria-controls="TieredLottoPayoutsInTaxReportCtrl">
+        <li>TieredLottoPayoutsInTaxReport</li>
+      </button>
+    </h2>
+    <div id="TieredLottoPayoutsInTaxReportCtrl" class="accordion-collapse collapse" aria-labelledby="TieredLottoPayoutsInTaxReportCtrl" 
+	data-bs-parent="#TieredLottoPayoutsInTaxReportCtrl">
+      <div class="accordion-body">
+17874</br>
+Results 5 Tiered Lotto bets with 4 Tiered results. The test ensures that he potential payout from these Tiered results returns the expected value. Tax Report.
+</div>
+</div>
+</div>
+</div>
+</ol>
+</div>
+</div>
+</div>
+  </div>
+<div class="accordion" id="accordionApiSpecialMultipleTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="ApiSpecialMultipleTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ApiSpecialMultipleTestsCtrl" 
+	  aria-expanded="false" aria-controls="ApiSpecialMultipleTestsCtrl">
+        <li>ApiSpecialMultipleTests</li>
+		<span class="badge badge-dark" id="ApiSpecialMultipleTests_Span"></span>
+      </button>
+    </h2>
+<div id="ApiSpecialMultipleTestsCtrl" class="accordion-collapse collapse" aria-labelledby="ApiSpecialMultipleTestsCtrl" data-bs-parent="#accordionApiSpecialMultipleTestsCtrl">
+
+ <div class="accordion-body">
+ <ol id="ApiSpecialMultipleTests1">
+ 
+<div class="accordion" id="accordionPlace_Special_Multiple_Bet_3_Legs_Trixie">
+  <div class="accordion-item">   
+  <h2 class="accordion-header" id="Place_Special_Multiple_Bet_3_Legs_Trixie">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place_Special_Multiple_Bet_3_Legs_TrixieCtrl" 
+	  aria-expanded="true" aria-controls="Place_Special_Multiple_Bet_3_Legs_TrixieCtrl">
+        <li>Place_Special_Multiple_Bet_3_Legs_Trixie</li>
+      </button>
+    </h2>
+    <div id="Place_Special_Multiple_Bet_3_Legs_TrixieCtrl" class="accordion-collapse collapse" aria-labelledby="Place_Special_Multiple_Bet_3_Legs_TrixieCtrl" 
+	data-bs-parent="#Place_Special_Multiple_Bet_3_Legs_TrixieCtrl">
+      <div class="accordion-body">
+Place a special multiple using 3 initial legs.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionPlace_Special_Multiple_Bet_4_Legs_Yankee">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place_Special_Multiple_Bet_4_Legs_Yankee">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place_Special_Multiple_Bet_4_Legs_YankeeCtrl" 
+	  aria-expanded="true" aria-controls="Place_Special_Multiple_Bet_4_Legs_YankeeCtrl">
+        <li>Place_Special_Multiple_Bet_4_Legs_Yankee</li>
+      </button>
+    </h2>
+    <div id="Place_Special_Multiple_Bet_4_Legs_YankeeCtrl" class="accordion-collapse collapse" aria-labelledby="Place_Special_Multiple_Bet_4_Legs_Yankee" 
+	data-bs-parent="#accordionPlace_Special_Multiple_Bet_4_Legs_YankeeCtrl">
+      <div class="accordion-body">
+Place a special multiple using 4 initial legs.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionPlace_Special_Multiple_Bet_5_Legs_Canadian">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place_Special_Multiple_Bet_5_Legs_Canadian">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place_Special_Multiple_Bet_5_Legs_CanadianCtrl" 
+	  aria-expanded="true" aria-controls="Place_Special_Multiple_Bet_5_Legs_CanadianCtrl">
+        <li>Place_Special_Multiple_Bet_5_Legs_Canadian</li>
+      </button>
+    </h2>
+    <div id="Place_Special_Multiple_Bet_5_Legs_CanadianCtrl" class="accordion-collapse collapse" aria-labelledby="Place_Special_Multiple_Bet_5_Legs_Canadian" 
+	data-bs-parent="#accordionPlace_Special_Multiple_Bet_5_Legs_Canadian">
+      <div class="accordion-body">
+Place a special multiple using 5 initial legs.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionPlace_Special_Multiple_Bet_6_Legs_Heinz">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place_Special_Multiple_Bet_6_Legs_Heinz">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place_Special_Multiple_Bet_6_Legs_HeinzCtrl" 
+	  aria-expanded="true" aria-controls="Place_Special_Multiple_Bet_6_Legs_HeinzCtrl">
+        <li>Place_Special_Multiple_Bet_6_Legs_Heinz</li>
+      </button>
+    </h2>
+    <div id="Place_Special_Multiple_Bet_6_Legs_HeinzCtrl" class="accordion-collapse collapse" aria-labelledby="Place_Special_Multiple_Bet_6_Legs_Heinz" 
+	data-bs-parent="#accordionPlace_Special_Multiple_Bet_6_Legs_Heinz">
+      <div class="accordion-body">
+Place a special multiple using 6 initial legs.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionPlace_Special_Multiple_Bet_7_Legs_Super_Heinz">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place_Special_Multiple_Bet_7_Legs_Super_Heinz">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place_Special_Multiple_Bet_7_Legs_Super_HeinzCtrl" 
+	  aria-expanded="true" aria-controls="Place_Special_Multiple_Bet_7_Legs_Super_HeinzCtrl">
+        <li>Place_Special_Multiple_Bet_7_Legs_Super_Heinz</li>
+      </button>
+    </h2>
+    <div id="Place_Special_Multiple_Bet_7_Legs_Super_HeinzCtrl" class="accordion-collapse collapse" aria-labelledby="Place_Special_Multiple_Bet_7_Legs_Super_Heinz" 
+	data-bs-parent="#accordionPlace_Special_Multiple_Bet_7_Legs_Super_Heinz">
+      <div class="accordion-body">
+Place a special multiple using 7 initial legs.
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionPlace_Special_Multiple_Bet_8_Legs_Goliath">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place_Special_Multiple_Bet_8_Legs_Goliath">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place_Special_Multiple_Bet_8_Legs_GoliathCtrl" 
+	  aria-expanded="true" aria-controls="Place_Special_Multiple_Bet_8_Legs_GoliathCtrl">
+        <li>Place_Special_Multiple_Bet_8_Legs_Goliath</li>
+      </button>
+    </h2>
+    <div id="Place_Special_Multiple_Bet_8_Legs_GoliathCtrl" class="accordion-collapse collapse" aria-labelledby="Place_Special_Multiple_Bet_8_Legs_Goliath" 
+	data-bs-parent="#accordionPlace_Special_Multiple_Bet_8_Legs_Goliath">
+      <div class="accordion-body">
+Place a special multiple using 8 initial legs.
+</div>
+</div>
+</div>
+</div>
+
+
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionApiSportTests">
+<div class="accordion-item">
+    <h2 class="accordion-header" id="ApiSportTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ApiSportTestsCtrl" 
+	  aria-expanded="true" aria-controls="ApiSportTestsCtrl">
+        <li>ApiSportTests</li>
+		<span class="badge badge-dark" id="ApiSportTests_Span"></span>
+      </button>
+    </h2>
+    <div id="ApiSportTestsCtrl" class="accordion-collapse collapse" aria-labelledby="ApiSportTests" 
+	data-bs-parent="#accordionApiSportTests">
+      <div class="accordion-body">
+	  <ol>
+	  <div class="accordion" id="accordionChange_Leg_Price">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Change_Leg_Price">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Change_Leg_PriceCtrl" 
+	  aria-expanded="true" aria-controls="Change_Leg_PriceCtrl">
+        <li>Change_Leg_Price</li>
+      </button>
+    </h2>
+    <div id="Change_Leg_PriceCtrl" class="accordion-collapse collapse" aria-labelledby="Change_Leg_Price" 
+	data-bs-parent="#accordionChange_Leg_Price">
+      <div class="accordion-body">
+	  Change the price of selection and then ensure the new price is honoured when placing and resulting a bet.
+	  </div>
+	  </div>
+	    </div>
+		  </div>
+		  
+<div class="accordion" id="accordionCloseFixturesFunction">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CloseFixturesFunction">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CloseFixturesFunctionCtrl" 
+	  aria-expanded="true" aria-controls="CloseFixturesFunctionCtrl">
+        <li>CloseFixturesFunction</li>
+      </button>
+    </h2>
+    <div id="CloseFixturesFunctionCtrl" class="accordion-collapse collapse" aria-labelledby="CloseFixturesFunction" 
+	data-bs-parent="#accordionCloseFixturesFunction">
+      <div class="accordion-body">
+	 Close a fixture and ensure its success via the response.
+	  </div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionPlace3LegBet_ScratchLeg1">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place3LegBet_ScratchLeg1">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place3LegBet_ScratchLeg1Ctrl" 
+	  aria-expanded="true" aria-controls="Place3LegBet_ScratchLeg1Ctrl">
+        <li>Place3LegBet_ScratchLeg1</li>
+      </button>
+    </h2>
+    <div id="Place3LegBet_ScratchLeg1Ctrl" class="accordion-collapse collapse" aria-labelledby="Place3LegBet_ScratchLeg1" 
+	data-bs-parent="#accordionPlace3LegBet_ScratchLeg1">
+      <div class="accordion-body">
+	Places a bet that contains three legs, for three different fixtures from three different tournaments. The first leg is scratched and the other legs are resulted as winners.
+	  </div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionPlace3LegBet_ScratchLeg2">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place3LegBet_ScratchLeg2">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place3LegBet_ScratchLeg2Ctrl" 
+	  aria-expanded="true" aria-controls="Place3LegBet_ScratchLeg2Ctrl">
+        <li>Place3LegBet_ScratchLeg2</li>
+      </button>
+    </h2>
+    <div id="Place3LegBet_ScratchLeg2Ctrl" class="accordion-collapse collapse" aria-labelledby="Place3LegBet_ScratchLeg2" 
+	data-bs-parent="#accordionPlace3LegBet_ScratchLeg2">
+      <div class="accordion-body">
+	Places a bet that contains three legs, for three different fixtures from three different tournaments. The second leg is scratched and the other legs are resulted as winners.
+	  </div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionPlace3LegBet_ScratchLeg3">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place3LegBet_ScratchLeg3">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place3LegBet_ScratchLeg3Ctrl" 
+	  aria-expanded="true" aria-controls="Place3LegBet_ScratchLeg3Ctrl">
+        <li>Place3LegBet_ScratchLeg3</li>
+      </button>
+    </h2>
+    <div id="Place3LegBet_ScratchLeg3Ctrl" class="accordion-collapse collapse" aria-labelledby="Place3LegBet_ScratchLeg3" 
+	data-bs-parent="#accordionPlace3LegBet_ScratchLeg3">
+      <div class="accordion-body">
+	Places a bet that contains three legs, for three different fixtures from three different tournaments. The third leg is scratched and the other legs are resulted as winners.
+	  </div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionPlaceSingleSportBetAndScratchMarket">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="PlaceSingleSportBetAndScratchMarket">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#PlaceSingleSportBetAndScratchMarketCtrl" 
+	  aria-expanded="true" aria-controls="PlaceSingleSportBetAndScratchMarketCtrl">
+        <li>PlaceSingleSportBetAndScratchMarket</li>
+      </button>
+    </h2>
+    <div id="PlaceSingleSportBetAndScratchMarketCtrl" class="accordion-collapse collapse" aria-labelledby="PlaceSingleSportBetAndScratchMarket" 
+	data-bs-parent="#accordionPlaceSingleSportBetAndScratchMarket">
+      <div class="accordion-body">
+	Places a bet on a Sport fixture then scratches the Market. The Bet report is checked before and after the Market is scratched.
+	</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionPlaceSingleSportBetAndScratchMarket_CheckBetReport">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="PlaceSingleSportBetAndScratchMarket_CheckBetReport">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#PlaceSingleSportBetAndScratchMarket_CheckBetReportCtrl" 
+	  aria-expanded="true" aria-controls="PlaceSingleSportBetAndScratchMarket_CheckBetReportCtrl">
+        <li>PlaceSingleSportBetAndScratchMarket_CheckBetReport</li>
+      </button>
+    </h2>
+    <div id="PlaceSingleSportBetAndScratchMarket_CheckBetReportCtrl" class="accordion-collapse collapse" aria-labelledby="PlaceSingleSportBetAndScratchMarket_CheckBetReport" 
+	data-bs-parent="#accordionPlaceSingleSportBetAndScratchMarket_CheckBetReport">
+      <div class="accordion-body">
+	Places a bet on a Sport fixture then scratches the Market. The Bet report is checked before and after the Market is scratched.
+	</div>
+	  </div>
+	    </div>
+</div>
+		 
+<div class="accordion" id="accordionPlaceSingleSportBetAndScratchSelection">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="PlaceSingleSportBetAndScratchSelection">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#PlaceSingleSportBetAndScratchSelectionCtrl" 
+	  aria-expanded="true" aria-controls="PlaceSingleSportBetAndScratchSelectionCtrl">
+        <li>PlaceSingleSportBetAndScratchSelection</li>
+      </button>
+    </h2>
+    <div id="PlaceSingleSportBetAndScratchSelectionCtrl" class="accordion-collapse collapse" aria-labelledby="PlaceSingleSportBetAndScratchSelection" 
+	data-bs-parent="#accordionPlaceSingleSportBetAndScratchSelection">
+      <div class="accordion-body">
+	Places a bet on a Sport fixture then scratches the Selection.
+	</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionRefundSportFixtureAfter">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RefundSportFixtureAfter">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RefundSportFixtureAfterCtrl" 
+	  aria-expanded="true" aria-controls="RefundSportFixtureAfterCtrl">
+        <li>RefundSportFixtureAfter</li>
+      </button>
+    </h2>
+    <div id="RefundSportFixtureAfterCtrl" class="accordion-collapse collapse" aria-labelledby="RefundSportFixtureAfter" 
+	data-bs-parent="#accordionRefundSportFixtureAfter">
+      <div class="accordion-body">
+Refunds the sport fixture after.
+	</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionRefundSportFixtureBefore">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RefundSportFixtureBefore">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RefundSportFixtureBeforeCtrl" 
+	  aria-expanded="true" aria-controls="RefundSportFixtureBeforeCtrl">
+        <li>RefundSportFixtureBefore</li>
+      </button>
+    </h2>
+    <div id="RefundSportFixtureBeforeCtrl" class="accordion-collapse collapse" aria-labelledby="RefundSportFixtureBefore" 
+	data-bs-parent="#accordionRefundSportFixtureBefore">
+      <div class="accordion-body">
+Refunds the sport fixture Before.
+	</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionRefundSportFixtureMarketAfter">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RefundSportFixtureMarketAfter">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RefundSportFixtureMarketAfterCtrl" 
+	  aria-expanded="true" aria-controls="RefundSportFixtureMarketAfterCtrl">
+        <li>RefundSportFixtureMarketAfter</li>
+      </button>
+    </h2>
+    <div id="RefundSportFixtureMarketAfterCtrl" class="accordion-collapse collapse" aria-labelledby="RefundSportFixtureMarketAfter" 
+	data-bs-parent="#accordionRefundSportFixtureMarketAfter">
+      <div class="accordion-body">
+Refunds the sport fixture after.
+	</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionRefundSportFixtureMarketBefore">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RefundSportFixtureMarketBefore">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RefundSportFixtureMarketBeforeCtrl" 
+	  aria-expanded="true" aria-controls="RefundSportFixtureMarketBeforeCtrl">
+        <li>RefundSportFixtureMarketBefore</li>
+      </button>
+    </h2>
+    <div id="RefundSportFixtureMarketBeforeCtrl" class="accordion-collapse collapse" aria-labelledby="RefundSportFixtureMarketBefore" 
+	data-bs-parent="#accordionRefundSportFixtureMarketBefore">
+      <div class="accordion-body">
+Refunds the sport fixture Before.
+	</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionRepeat_A_Multiple_Sport_Bet_Using_Dash_R">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Repeat_A_Multiple_Sport_Bet_Using_Dash_R">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Repeat_A_Multiple_Sport_Bet_Using_Dash_RCtrl" 
+	  aria-expanded="true" aria-controls="Repeat_A_Multiple_Sport_Bet_Using_Dash_RCtrl">
+        <li>Repeat_A_Multiple_Sport_Bet_Using_Dash_R</li>
+      </button>
+    </h2>
+    <div id="Repeat_A_Multiple_Sport_Bet_Using_Dash_RCtrl" class="accordion-collapse collapse" aria-labelledby="Repeat_A_Multiple_Sport_Bet_Using_Dash_R" 
+	data-bs-parent="#accordionRepeat_A_Multiple_Sport_Bet_Using_Dash_R">
+      <div class="accordion-body">
+Repeat a multiple sport bet using the dash "R" key method.
+	</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionRepeat_A_Partially_Resulted_Multiple_Sport_Bet_Using_Dash_R">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Repeat_A_Partially_Resulted_Multiple_Sport_Bet_Using_Dash_R">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Repeat_A_Partially_Resulted_Multiple_Sport_Bet_Using_Dash_RCtrl" 
+	  aria-expanded="true" aria-controls="Repeat_A_Partially_Resulted_Multiple_Sport_Bet_Using_Dash_RCtrl">
+        <li>Repeat_A_Partially_Resulted_Multiple_Sport_Bet_Using_Dash_R</li>
+      </button>
+    </h2>
+    <div id="Repeat_A_Partially_Resulted_Multiple_Sport_Bet_Using_Dash_RCtrl" class="accordion-collapse collapse" aria-labelledby="Repeat_A_Partially_Resulted_Multiple_Sport_Bet_Using_Dash_R" 
+	data-bs-parent="#accordionRepeat_A_Partially_Resulted_Multiple_Sport_Bet_Using_Dash_R">
+      <div class="accordion-body">
+Repeat a partially resulted multiple sports bet via the dash "r" method.
+	</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionRepeat_Sport_Bet_Using_Dash_R">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Repeat_Sport_Bet_Using_Dash_R">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Repeat_Sport_Bet_Using_Dash_RCtrl" 
+	  aria-expanded="true" aria-controls="Repeat_Sport_Bet_Using_Dash_RCtrl">
+        <li>Repeat_Sport_Bet_Using_Dash_R</li>
+      </button>
+    </h2>
+    <div id="Repeat_Sport_Bet_Using_Dash_RCtrl" class="accordion-collapse collapse" aria-labelledby="Repeat_Sport_Bet_Using_Dash_R" 
+	data-bs-parent="#accordionRepeat_Sport_Bet_Using_Dash_R">
+      <div class="accordion-body">
+Repeat a sports bet via the dash "r" method.
+	</div>
+	  </div>
+	    </div>
+</div>
+ 
+ <div class="accordion" id="accordionRepeatMultipleSportsBetsUsingF3">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RepeatMultipleSportsBetsUsingF3">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RepeatMultipleSportsBetsUsingF3Ctrl" 
+	  aria-expanded="true" aria-controls="RepeatMultipleSportsBetsUsingF3Ctrl">
+        <li>RepeatMultipleSportsBetsUsingF3</li>
+      </button>
+    </h2>
+    <div id="RepeatMultipleSportsBetsUsingF3Ctrl" class="accordion-collapse collapse" aria-labelledby="RepeatMultipleSportsBetsUsingF3" 
+	data-bs-parent="#accordionRepeatMultipleSportsBetsUsingF3">
+      <div class="accordion-body">
+This lays a Multiple sports bet then calls the F3 function to repeat the bet.
+</br>
+18159
+	</div>
+	  </div>
+	    </div>
+</div>
+
+ <div class="accordion" id="accordionRepeatSportsBetsUsingF3">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RepeatSportsBetsUsingF3">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RepeatSportsBetsUsingF3Ctrl" 
+	  aria-expanded="true" aria-controls="RepeatSportsBetsUsingF3Ctrl">
+        <li>RepeatSportsBetsUsingF3</li>
+      </button>
+    </h2>
+    <div id="RepeatSportsBetsUsingF3Ctrl" class="accordion-collapse collapse" aria-labelledby="RepeatSportsBetsUsingF3" 
+	data-bs-parent="#accordionRepeatSportsBetsUsingF3">
+      <div class="accordion-body">
+This lays a sports bet then calls the F3 function to repeat the bet.
+	</div>
+	  </div>
+	    </div>
+</div>
+
+ <div class="accordion" id="accordionSport_Tax_Report_Calculations_On_Leg">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Sport_Tax_Report_Calculations_On_Leg">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Sport_Tax_Report_Calculations_On_LegCtrl" 
+	  aria-expanded="true" aria-controls="Sport_Tax_Report_Calculations_On_LegCtrl">
+        <li>Sport_Tax_Report_Calculations_On_Leg</li>
+      </button>
+    </h2>
+    <div id="Sport_Tax_Report_Calculations_On_LegCtrl" class="accordion-collapse collapse" aria-labelledby="Sport_Tax_Report_Calculations_On_Leg" 
+	data-bs-parent="#accordionSport_Tax_Report_Calculations_On_Leg">
+      <div class="accordion-body">
+Ensure that a resulted sports bet is correctly calculated on the tax report using tax on leg calculations.
+	</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionSportTaxReportCalculationsOnBet">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="SportTaxReportCalculationsOnBet">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#SportTaxReportCalculationsOnBetCtrl" 
+	  aria-expanded="true" aria-controls="SportTaxReportCalculationsOnBetCtrl">
+        <li>SportTaxReportCalculationsOnBet</li>
+      </button>
+    </h2>
+    <div id="SportTaxReportCalculationsOnBetCtrl" class="accordion-collapse collapse" aria-labelledby="SportTaxReportCalculationsOnBet" 
+	data-bs-parent="#accordionSportTaxReportCalculationsOnBet">
+      <div class="accordion-body">
+Ensure that a resulted sports bet is correctly calculated on the tax report using tax on bet calculations.
+	</div>
+	  </div>
+	    </div>
+</div>
+
+	  </ol>
+</div>
+</div>
+</div>
+</div>
+<div class="accordion" id="accordionApiUserTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="ApiUserTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ApiUserTestsCtrl" 
+	  aria-expanded="true" aria-controls="ApiUserTestsCtrl">
+        <li>ApiUserTests</li>
+		<span class="badge badge-dark" id="ApiUserTests_Span"></span>
+      </button>
+    </h2>
+    <div id="ApiUserTestsCtrl" class="accordion-collapse collapse" aria-labelledby="ApiUserTests" 
+	data-bs-parent="#accordionApiUserTests">
+      <div class="accordion-body">
+<ol id="ApiUserTests1">
+<div class="accordion" id="accordionDismiss_User">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Dismiss_User">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Dismiss_UserCtrl" 
+	  aria-expanded="true" aria-controls="Dismiss_UserCtrl">
+        <li>Dismiss_User</li>
+      </button>
+    </h2>
+    <div id="Dismiss_UserCtrl" class="accordion-collapse collapse" aria-labelledby="Dismiss_User" 
+	data-bs-parent="#accordionDismiss_User">
+      <div class="accordion-body">
+No method information provided.
+</div>
+	  </div>
+	    </div>
+</div>
+</ol>
+	</div>
+	  </div>
+	    </div>
+</div>
+<div class="accordion" id="accordionBankAccountPermissionsTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="BankAccountPermissionsTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#BankAccountPermissionsTestsCtrl" 
+	  aria-expanded="true" aria-controls="BankAccountPermissionsTestsCtrl">
+        <li>BankAccountPermissionsTests</li>
+			<span class="badge badge-dark" id="BankAccountPermissionsTests_Span"></span>
+      </button>
+    </h2>
+    <div id="BankAccountPermissionsTestsCtrl" class="accordion-collapse collapse" aria-labelledby="BankAccountPermissionsTests" 
+	data-bs-parent="#accordionBankAccountPermissionsTests">
+      <div class="accordion-body">
+<ol id="BankAccountPermissionsTests1">
+<div class="accordion" id="accordionManage_Bookmaker_Bank_Details_Create_Account_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Manage_Bookmaker_Bank_Details_Create_Account_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Manage_Bookmaker_Bank_Details_Create_Account_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Manage_Bookmaker_Bank_Details_Create_Account_EnabledCtrl">
+        <li>Manage_Bookmaker_Bank_Details_Create_Account_Enabled</li>
+      </button>
+    </h2>
+    <div id="Manage_Bookmaker_Bank_Details_Create_Account_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Manage_Bookmaker_Bank_Details_Create_Account_Enabled" 
+	data-bs-parent="#accordionManage_Bookmaker_Bank_Details_Create_Account_Enabled">
+      <div class="accordion-body">
+this test checks whether you can create a bank account with the right permission
+</div>
+	  </div>
+	    </div>
+</div>
+</ol>
+	</div>
+	  </div>
+	    </div>
+</div>
+<div class="accordion" id="accordionBranchAccessTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="BranchAccessTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#BranchAccessTestsCtrl" 
+	  aria-expanded="true" aria-controls="BranchAccessTestsCtrl">
+        <li>BranchAccessTests</li>
+				<span class="badge badge-dark" id="BranchAccessTests_Span"></span>
+      </button>
+    </h2>
+    <div id="BranchAccessTestsCtrl" class="accordion-collapse collapse" aria-labelledby="BranchAccessTests" 
+	data-bs-parent="#accordionBranchAccessTests">
+      <div class="accordion-body">
+<ol id="BranchAccessTests1">
+<div class="accordion" id="accordionAccessAllowsLottoBet">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="AccessAllowsLottoBet">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#AccessAllowsLottoBetCtrl" 
+	  aria-expanded="true" aria-controls="AccessAllowsLottoBetCtrl">
+        <li>AccessAllowsLottoBet</li>
+      </button>
+    </h2>
+    <div id="AccessAllowsLottoBetCtrl" class="accordion-collapse collapse" aria-labelledby="AccessAllowsLottoBet" 
+	data-bs-parent="#accordionAccessAllowsLottoBet">
+      <div class="accordion-body">
+IP whitelisting allows placing of lotto bets.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionAccessAllowsSportBet">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="AccessAllowsSportBet">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#AccessAllowsSportBetCtrl" 
+	  aria-expanded="true" aria-controls="AccessAllowsSportBetCtrl">
+        <li>AccessAllowsSportBet</li>
+      </button>
+    </h2>
+    <div id="AccessAllowsSportBetCtrl" class="accordion-collapse collapse" aria-labelledby="AccessAllowsSportBet" 
+	data-bs-parent="#accordionAccessAllowsSportBet">
+      <div class="accordion-body">
+IP whitelisting allows placing of sport bets.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCheckIgnoreWhiteListRuleWithoutPermission">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CheckIgnoreWhiteListRuleWithoutPermission">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CheckIgnoreWhiteListRuleWithoutPermissionCtrl" 
+	  aria-expanded="true" aria-controls="CheckIgnoreWhiteListRuleWithoutPermissionCtrl">
+        <li>CheckIgnoreWhiteListRuleWithoutPermission</li>
+      </button>
+    </h2>
+    <div id="CheckIgnoreWhiteListRuleWithoutPermissionCtrl" class="accordion-collapse collapse" aria-labelledby="CheckIgnoreWhiteListRuleWithoutPermission" 
+	data-bs-parent="#accordionCheckIgnoreWhiteListRuleWithoutPermission">
+      <div class="accordion-body">
+Ensure that the white list rule is honoured when an IP address is not allowed.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCheckIgnoreWhiteListRuleWithPermission">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CheckIgnoreWhiteListRuleWithPermission">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CheckIgnoreWhiteListRuleWithPermissionCtrl" 
+	  aria-expanded="true" aria-controls="CheckIgnoreWhiteListRuleWithPermissionCtrl">
+        <li>CheckIgnoreWhiteListRuleWithPermission</li>
+      </button>
+    </h2>
+    <div id="CheckIgnoreWhiteListRuleWithPermissionCtrl" class="accordion-collapse collapse" aria-labelledby="CheckIgnoreWhiteListRuleWithPermission" 
+	data-bs-parent="#accordionCheckIgnoreWhiteListRuleWithPermission">
+      <div class="accordion-body">
+Check that the ignore whitelist permission allows for betting without whitelisting the IP.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCheckWhiteListBranch">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CheckWhiteListBranch">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CheckWhiteListBranchCtrl" 
+	  aria-expanded="true" aria-controls="CheckWhiteListBranchCtrl">
+        <li>CheckWhiteListBranch</li>
+      </button>
+    </h2>
+    <div id="CheckWhiteListBranchCtrl" class="accordion-collapse collapse" aria-labelledby="CheckWhiteListBranch" 
+	data-bs-parent="#accordionCheckWhiteListBranch">
+      <div class="accordion-body">
+Add a new user and IP to the white list, then get the white list to find the new entry. Then delete the whitelist entry, and assert.
+</div>
+	  </div>
+	    </div>
+</div>
+</ol>
+	</div>
+	  </div>
+	    </div>
+</div>
+<div class="accordion" id="accordionBranchChangeTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="BranchChangeTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#BranchChangeTestsCtrl" 
+	  aria-expanded="true" aria-controls="BranchChangeTestsCtrl">
+        <li>BranchChangeTests</li>
+			<span class="badge badge-dark" id="BranchChangeTests_Span"></span>
+      </button>
+    </h2>
+    <div id="BranchChangeTestsCtrl" class="accordion-collapse collapse" aria-labelledby="BranchChangeTests" 
+	data-bs-parent="#accordionBranchChangeTests">
+      <div class="accordion-body">
+	  <ol id="BranchChangeTests1">
+	  <div class="accordion" id="accordionChange_User_Branch_After_Cashing_Up">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Change_User_Branch_After_Cashing_Up">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Change_User_Branch_After_Cashing_UpCtrl" 
+	  aria-expanded="true" aria-controls="Change_User_Branch_After_Cashing_UpCtrl">
+        <li>Change_User_Branch_After_Cashing_Up</li>
+      </button>
+    </h2>
+    <div id="Change_User_Branch_After_Cashing_UpCtrl" class="accordion-collapse collapse" aria-labelledby="Change_User_Branch_After_Cashing_Up" 
+	data-bs-parent="#accordionChange_User_Branch_After_Cashing_Up">
+      <div class="accordion-body">
+	  Changes the user branch after cashing up.	  
+</div>
+	  </div>
+	    </div>
+</div>
+
+  <div class="accordion" id="accordionChange_User_Branch_After_Cashing_Up_From_Header_Menu">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Change_User_Branch_After_Cashing_Up_From_Header_Menu">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Change_User_Branch_After_Cashing_Up_From_Header_MenuCtrl" 
+	  aria-expanded="true" aria-controls="Change_User_Branch_After_Cashing_Up_From_Header_MenuCtrl">
+        <li>Change_User_Branch_After_Cashing_Up_From_Header_Menu</li>
+      </button>
+    </h2>
+    <div id="Change_User_Branch_After_Cashing_Up_From_Header_MenuCtrl" class="accordion-collapse collapse" aria-labelledby="Change_User_Branch_After_Cashing_Up_From_Header_Menu" 
+	data-bs-parent="#accordionChange_User_Branch_After_Cashing_Up_From_Header_Menu">
+      <div class="accordion-body">
+	  Changes the user branch after cashing up.	  
+</div>
+	  </div>
+	    </div>
+</div>
+	 
+  <div class="accordion" id="accordionChange_User_Branch_Without_Cashing_Up">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Change_User_Branch_Without_Cashing_Up">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Change_User_Branch_Without_Cashing_UpCtrl" 
+	  aria-expanded="true" aria-controls="Change_User_Branch_Without_Cashing_UpCtrl">
+        <li>Change_User_Branch_Without_Cashing_Up</li>
+      </button>
+    </h2>
+    <div id="Change_User_Branch_Without_Cashing_UpCtrl" class="accordion-collapse collapse" aria-labelledby="Change_User_Branch_Without_Cashing_Up" 
+	data-bs-parent="#accordionChange_User_Branch_Without_Cashing_Up">
+      <div class="accordion-body">
+	 tries to change the user branch without cashing up. Should not be possible.
+</div>
+	  </div>
+	    </div>
+</div>	 
+	  
+	   <div class="accordion" id="accordionChange_User_Branch_Without_Cashing_Up_From_Header_Menu">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Change_User_Branch_Without_Cashing_Up_From_Header_Menu">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Change_User_Branch_Without_Cashing_Up_From_Header_MenuCtrl" 
+	  aria-expanded="true" aria-controls="Change_User_Branch_Without_Cashing_Up_From_Header_MenuCtrl">
+        <li>Change_User_Branch_Without_Cashing_Up_From_Header_Menu</li>
+      </button>
+    </h2>
+    <div id="Change_User_Branch_Without_Cashing_Up_From_Header_MenuCtrl" class="accordion-collapse collapse" aria-labelledby="Change_User_Branch_Without_Cashing_Up_From_Header_Menu" 
+	data-bs-parent="#accordionChange_User_Branch_Without_Cashing_Up_From_Header_Menu">
+      <div class="accordion-body">
+	tries to change the user branch without cashing up. Should not be possible.
+</div>
+	  </div>
+	    </div>
+</div> 
+	  </ol>
+</div>
+	  </div>
+	    </div>
+</div>
+<div class="accordion" id="accordionCancelBetPermissionsTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CancelBetPermissionsTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CancelBetPermissionsTestsCtrl" 
+	  aria-expanded="true" aria-controls="CancelBetPermissionsTestsCtrl">
+        <li>CancelBetPermissionsTests</li>
+		<span class="badge badge-dark" id="CancelBetPermissionsTests_Span"></span>
+      </button>
+    </h2>
+    <div id="CancelBetPermissionsTestsCtrl" class="accordion-collapse collapse" aria-labelledby="CancelBetPermissionsTests" 
+	data-bs-parent="#accordionCancelBetPermissionsTests">
+      <div class="accordion-body">
+<ol id="CancelBetPermissionsTests1">
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_ClosedCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_ClosedCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_ClosedCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_Negative">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_Negative">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_NegativeCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_NegativeCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_Negative</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_NegativeCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_Negative" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_Negative">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Lotto">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Lotto">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_LottoCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_LottoCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Lotto</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_LottoCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Lotto" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Lotto">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission on closed multiple lotto.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Lotto_Negative">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Lotto_Negative">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Lotto_NegativeCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Lotto_NegativeCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Lotto_Negative</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Lotto_NegativeCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Lotto_Negative" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Lotto_Negative">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission disabled on closed multiple lotto.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Sport">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Sport">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_SportCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_SportCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Sport</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_SportCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Sport" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Sport">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission on closed multiple sport.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Sport_Negative">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Sport_Negative">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Sport_NegativeCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Sport_NegativeCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Sport_Negative</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Sport_NegativeCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Sport_Negative" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Closed_Multiple_Sport_Negative">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission disabled on closed sport lotto.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Closed_Single_Lotto">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Lotto">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Closed_Single_LottoCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_LottoCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Lotto</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_LottoCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Lotto" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Closed_Single_Lotto">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission on closed lotto.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Closed_Single_Lotto_Negative">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Lotto_Negative">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Lotto_NegativeCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Lotto_NegativeCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Lotto_Negative</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Lotto_NegativeCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Lotto_Negative" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Closed_Single_Lotto_Negative">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission disabled on closed lotto.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Closed_Single_Sport">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Sport">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Closed_Single_SportCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_SportCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Sport</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_SportCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Sport" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Closed_Single_Sport">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission on closed sport.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Closed_Single_Sport_Negative">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Sport_Negative">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Sport_NegativeCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Sport_NegativeCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Sport_Negative</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Sport_NegativeCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Closed_Single_Sport_Negative" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Closed_Single_Sport_Negative">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission disabled on closed sport.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Open_Multiple_Lotto">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_Lotto">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_LottoCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_LottoCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_Lotto</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_LottoCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_Lotto" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Open_Multiple_Lotto">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission on closed multiple lotto.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Open_Multiple_Lotto_Negative">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_Lotto_Negative">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_Lotto_NegativeCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_Lotto_NegativeCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_Lotto_Negative</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_Lotto_NegativeCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_Lotto_Negative" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Open_Multiple_Lotto_Negative">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission disabled on closed multiple lotto.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Open_Multiple_Sport">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_Sport">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_SportCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_SportCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_Sport</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_SportCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Open_Multiple_Sport" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Open_Multiple_Sport">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission on closed multiple sport.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Open_Single_Lotto">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Open_Single_Lotto">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Open_Single_LottoCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Open_Single_LottoCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Open_Single_Lotto</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Open_Single_LottoCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Open_Single_Lotto" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Open_Single_Lotto">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission on open lotto.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Open_Single_Lotto_Negative">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Open_Single_Lotto_Negative">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Open_Single_Lotto_NegativeCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Open_Single_Lotto_NegativeCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Open_Single_Lotto_Negative</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Open_Single_Lotto_NegativeCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Open_Single_Lotto_Negative" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Open_Single_Lotto_Negative">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission disabled on open lotto.
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_On_Open_Single_Sport">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_On_Open_Single_Sport">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_On_Open_Single_SportCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_On_Open_Single_SportCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_On_Open_Single_Sport</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_On_Open_Single_SportCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_On_Open_Single_Sport" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_On_Open_Single_Sport">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission on open sport.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_Sport">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_Sport">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_SportCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_SportCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_Sport</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_SportCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_Sport" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_Sport">
+      <div class="accordion-body">
+"Cancel bet after fixture" permission on closed fixture.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_After_Fixture_Closed_Sport_Negative">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Fixture_Closed_Sport_Negative">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Fixture_Closed_Sport_NegativeCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Fixture_Closed_Sport_NegativeCtrl">
+        <li>Cancel_Bet_After_Fixture_Closed_Sport_Negative</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Fixture_Closed_Sport_NegativeCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Fixture_Closed_Sport_Negative" 
+	data-bs-parent="#accordionCancel_Bet_After_Fixture_Closed_Sport_Negative">
+      <div class="accordion-body">
+No method information provided.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_Against_Original_Clerk_Permission">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_Against_Original_Clerk_Permission">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_Against_Original_Clerk_PermissionCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_Against_Original_Clerk_PermissionCtrl">
+        <li>Cancel_Bet_Against_Original_Clerk_Permission</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_Against_Original_Clerk_PermissionCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_Against_Original_Clerk_Permission" 
+	data-bs-parent="#accordionCancel_Bet_Against_Original_Clerk_Permission">
+      <div class="accordion-body">
+"Cancel bet against original clerk" permission.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_Any_Permission">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_Any_Permission">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_Any_PermissionCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_Any_PermissionCtrl">
+        <li>Cancel_Bet_Any_Permission</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_Any_PermissionCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_Any_Permission" 
+	data-bs-parent="#accordionCancel_Bet_Any_Permission">
+      <div class="accordion-body">
+"Cancel any" permission.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_Mine_Only_Permission">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_Mine_Only_Permission">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_Mine_Only_PermissionCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_Mine_Only_PermissionCtrl">
+        <li>Cancel_Bet_Mine_Only_Permission</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_Mine_Only_PermissionCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_Mine_Only_Permission" 
+	data-bs-parent="#accordionCancel_Bet_Mine_Only_Permission">
+      <div class="accordion-body">
+"Cancel My bets" Permission.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_My_Branch_Permission">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_My_Branch_Permission">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_My_Branch_PermissionCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_My_Branch_PermissionCtrl">
+        <li>Cancel_Bet_My_Branch_Permission</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_My_Branch_PermissionCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_My_Branch_Permission" 
+	data-bs-parent="#accordionCancel_Bet_My_Branch_Permission">
+      <div class="accordion-body">
+"Cancel my branch" permission.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_My_Company_Permission">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_My_Company_Permission">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_My_Company_PermissionCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_My_Company_PermissionCtrl">
+        <li>Cancel_Bet_My_Company_Permission</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_My_Company_PermissionCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_My_Company_Permission" 
+	data-bs-parent="#accordionCancel_Bet_My_Company_Permission">
+      <div class="accordion-body">
+"Cancel my company's bets" Permission.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_Within_15_Minutes_Permission">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_Within_15_Minutes_Permission">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_Within_15_Minutes_PermissionCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_Within_15_Minutes_PermissionCtrl">
+        <li>Cancel_Bet_Within_15_Minutes_Permission</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_Within_15_Minutes_PermissionCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_Within_15_Minutes_Permission" 
+	data-bs-parent="#accordionCancel_Bet_Within_15_Minutes_Permission">
+      <div class="accordion-body">
+"Cancel bets withing 15 minutes" Permission.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_Without_PIN_Permission">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_Without_PIN_Permission">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_Without_PIN_PermissionCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_Without_PIN_PermissionCtrl">
+        <li>Cancel_Bet_Without_PIN_Permission</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_Without_PIN_PermissionCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_Without_PIN_Permission" 
+	data-bs-parent="#accordionCancel_Bet_Without_PIN_Permission">
+      <div class="accordion-body">
+"Cancel bet without PIN" Permission.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Sinlge_Bet_On_Multple_Betslip_Permission">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Sinlge_Bet_On_Multple_Betslip_Permission">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Sinlge_Bet_On_Multple_Betslip_PermissionCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Sinlge_Bet_On_Multple_Betslip_PermissionCtrl">
+        <li>Cancel_Sinlge_Bet_On_Multple_Betslip_Permission</li>
+      </button>
+    </h2>
+    <div id="Cancel_Sinlge_Bet_On_Multple_Betslip_PermissionCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Sinlge_Bet_On_Multple_Betslip_Permission" 
+	data-bs-parent="#accordionCancel_Sinlge_Bet_On_Multple_Betslip_Permission">
+      <div class="accordion-body">
+"Cancel single bet on multiple betslip" permission.
+</div>
+	  </div>
+	    </div>
+</div>
+</ol>
+</div>
+	  </div>
+	    </div>
+</div> 
+
+<div class="accordion" id="accordionCancelBetslipTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CancelBetslipTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CancelBetslipTestsCtrl" 
+	  aria-expanded="true" aria-controls="CancelBetslipTestsCtrl">
+        <li>CancelBetslipTests</li>
+			<span class="badge badge-dark" id="CancelBetslipTests_Span"></span>
+      </button>
+    </h2>
+    <div id="CancelBetslipTestsCtrl" class="accordion-collapse collapse" aria-labelledby="CancelBetslipTests" 
+	data-bs-parent="#accordionCancelBetslipTests">
+      <div class="accordion-body">
+	  <ol id="CancelBetslipTests1">
+<div class="accordion" id="accordionCancel_All_Lotto_Bets_On_A_Multiple_Betslip">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_All_Lotto_Bets_On_A_Multiple_Betslip">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_All_Lotto_Bets_On_A_Multiple_BetslipCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_All_Lotto_Bets_On_A_Multiple_BetslipCtrl">
+        <li>Cancel_All_Lotto_Bets_On_A_Multiple_Betslip</li>
+      </button>
+    </h2>
+    <div id="Cancel_All_Lotto_Bets_On_A_Multiple_BetslipCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_All_Lotto_Bets_On_A_Multiple_Betslip" 
+	data-bs-parent="#accordionCancel_All_Lotto_Bets_On_A_Multiple_Betslip">
+      <div class="accordion-body">
+Places a multiple lotto bet,then cancels all bets and checks the bet report for cancelled <br/>18153
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_After_Close_On_Multiple_Lotto">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Close_On_Multiple_Lotto">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Close_On_Multiple_LottoCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Close_On_Multiple_LottoCtrl">
+        <li>Cancel_Bet_After_Close_On_Multiple_Lotto</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Close_On_Multiple_LottoCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Close_On_Multiple_Lotto" 
+	data-bs-parent="#accordionCancel_Bet_After_Close_On_Multiple_Lotto">
+      <div class="accordion-body">
+Cancel bet after lotto has closed on multiple lotto.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_After_Close_On_Single_Lotto">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_After_Close_On_Single_Lotto">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_After_Close_On_Single_LottoCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_After_Close_On_Single_LottoCtrl">
+        <li>Cancel_Bet_After_Close_On_Single_Lotto</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_After_Close_On_Single_LottoCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_After_Close_On_Single_Lotto" 
+	data-bs-parent="#accordionCancel_Bet_After_Close_On_Single_Lotto">
+      <div class="accordion-body">
+Cancel bet after lotto has closed.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_On_Multiple_Lotto_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_On_Multiple_Lotto_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_On_Multiple_Lotto_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_On_Multiple_Lotto_In_Sig_EventsCtrl">
+        <li>Cancel_Bet_On_Multiple_Lotto_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_On_Multiple_Lotto_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_On_Multiple_Lotto_In_Sig_Events" 
+	data-bs-parent="#accordionCancel_Bet_On_Multiple_Lotto_In_Sig_Events">
+      <div class="accordion-body">
+Cancel multiple lotto bet and check sig events for log.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_On_Single_Lotto">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_On_Single_Lotto">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_On_Single_LottoCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_On_Single_LottoCtrl">
+        <li>Cancel_Bet_On_Single_Lotto</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_On_Single_LottoCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_On_Single_Lotto" 
+	data-bs-parent="#accordionCancel_Bet_On_Single_Lotto">
+      <div class="accordion-body">
+Cancel bet on lotto.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCancel_Single_Lotto_Bet_On_A_Multiple_Betslip">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Single_Lotto_Bet_On_A_Multiple_Betslip">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Single_Lotto_Bet_On_A_Multiple_BetslipCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Single_Lotto_Bet_On_A_Multiple_BetslipCtrl">
+        <li>Cancel_Single_Lotto_Bet_On_A_Multiple_Betslip</li>
+      </button>
+    </h2>
+    <div id="Cancel_Single_Lotto_Bet_On_A_Multiple_BetslipCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Single_Lotto_Bet_On_A_Multiple_Betslip" 
+	data-bs-parent="#accordionCancel_Single_Lotto_Bet_On_A_Multiple_Betslip">
+      <div class="accordion-body">
+Places a multiple lotto bet,then cancels all bets and checks the bet report for cancelled <br/>18153
+</div>
+	  </div>
+	    </div>
+</div>
+</ol>
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCashDashboardPermissionsTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CashDashboardPermissionsTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CashDashboardPermissionsTestsCtrl" 
+	  aria-expanded="true" aria-controls="CashDashboardPermissionsTestsCtrl">
+       <li>CashDashboardPermissionsTests</li>
+	   		<span class="badge badge-dark" id="CashDashboardPermissionsTests_Span"></span>
+      </button>
+    </h2>
+    <div id="CashDashboardPermissionsTestsCtrl" class="accordion-collapse collapse" aria-labelledby="CashDashboardPermissionsTests" 
+	data-bs-parent="#accordionCashDashboardPermissionsTests">
+      <div class="accordion-body">
+<ol id="CashDashboardPermissionsTests1">
+<div class="accordion" id="accordionTransfer_Without_A_Password">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Transfer_Without_A_Password">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Transfer_Without_A_PasswordCtrl" 
+	  aria-expanded="true" aria-controls="Transfer_Without_A_PasswordCtrl">
+        <li>Transfer_Without_A_Password</li>
+      </button>
+    </h2>
+    <div id="Transfer_Without_A_PasswordCtrl" class="accordion-collapse collapse" aria-labelledby="Transfer_Without_A_Password" 
+	data-bs-parent="#accordionTransfer_Without_A_Password">
+      <div class="accordion-body">
+This test will check that when the "Transfer without a password" Permission is enabled, the user is not prompted to enter a password on screen for clerks.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionTransferFromBankToClerkDisabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="TransferFromBankToClerkDisabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#TransferFromBankToClerkDisabledCtrl" 
+	  aria-expanded="true" aria-controls="TransferFromBankToClerkDisabledCtrl">
+        <li>TransferFromBankToClerkDisabled</li>
+      </button>
+    </h2>
+    <div id="TransferFromBankToClerkDisabledCtrl" class="accordion-collapse collapse" aria-labelledby="TransferFromBankToClerkDisabled" 
+	data-bs-parent="#accordionTransferFromBankToClerkDisabled">
+      <div class="accordion-body">
+No method information provided.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionTransferFromBankToVaultEnabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="TransferFromBankToVaultEnabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#TransferFromBankToVaultEnabledCtrl" 
+	  aria-expanded="true" aria-controls="TransferFromBankToVaultEnabledCtrl">
+        <li>TransferFromBankToVaultEnabled</li>
+      </button>
+    </h2>
+    <div id="TransferFromBankToVaultEnabledCtrl" class="accordion-collapse collapse" aria-labelledby="TransferFromBankToVaultEnabled" 
+	data-bs-parent="#accordionTransferFromBankToVaultEnabled">
+      <div class="accordion-body">
+No method information provided.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionTransferFromVaultToClerkEnabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="TransferFromVaultToClerkEnabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#TransferFromVaultToClerkEnabledCtrl" 
+	  aria-expanded="true" aria-controls="TransferFromVaultToClerkEnabledCtrl">
+        <li>TransferFromVaultToClerkEnabled</li>
+      </button>
+    </h2>
+    <div id="TransferFromVaultToClerkEnabledCtrl" class="accordion-collapse collapse" aria-labelledby="TransferFromVaultToClerkEnabled" 
+	data-bs-parent="#accordionTransferFromVaultToClerkEnabled">
+      <div class="accordion-body">
+This test will check that when the "Transfer from Vault to Clerk" Permission is enabled, the user is able to transfer funds from the Vault to the Clerk"
+</div>
+	  </div>
+	    </div>
+</div>
+</ol>
+</div>
+	</div>
+	</div>
+</div>
+
+<div class="accordion" id="accordionCashReconTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CashReconTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CashReconTestsCtrl" 
+	  aria-expanded="true" aria-controls="CashReconTestsCtrl">
+        <li>CashReconTests</li>
+		<span class="badge badge-dark" id="CashReconTests_Span"></span>
+      </button>
+    </h2>
+    <div id="CashReconTestsCtrl" class="accordion-collapse collapse" aria-labelledby="CashReconTests" 
+	data-bs-parent="#accordionCashReconTests">
+      <div class="accordion-body">
+<ol id="CashReconTests1">
+<div class="accordion" id="accordionCashReconCancelled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CashReconCancelled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CashReconCancelledCtrl" 
+	  aria-expanded="true" aria-controls="CashReconCancelledCtrl">
+        <li>CashReconCancelled</li>
+      </button>
+    </h2>
+    <div id="CashReconCancelledCtrl" class="accordion-collapse collapse" aria-labelledby="CashReconCancelled" 
+	data-bs-parent="#accordionCashReconCancelled">
+      <div class="accordion-body">
+Ensure that the cancelled value is correctly calculated after cancelling a bet.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCashReconCancelledAmount">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CashReconCancelledAmount">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CashReconCancelledAmountCtrl" 
+	  aria-expanded="true" aria-controls="CashReconCancelledAmountCtrl">
+        <li>CashReconCancelledAmount</li>
+      </button>
+    </h2>
+    <div id="CashReconCancelledAmountCtrl" class="accordion-collapse collapse" aria-labelledby="CashReconCancelledAmount" 
+	data-bs-parent="#accordionCashReconCancelledAmount">
+      <div class="accordion-body">
+Ensure that the cancelled amount value is correctly calculated after cancelling a bet.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCashReconCashUp">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CashReconCashUp">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CashReconCashUpCtrl" 
+	  aria-expanded="true" aria-controls="CashReconCashUpCtrl">
+        <li>CashReconCashUp</li>
+      </button>
+    </h2>
+    <div id="CashReconCashUpCtrl" class="accordion-collapse collapse" aria-labelledby="CashReconCashUp" 
+	data-bs-parent="#accordionCashReconCashUp">
+      <div class="accordion-body">
+Ensure cash recon correctly changes the values after a cash up.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCashReconNetCash">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CashReconNetCash">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CashReconNetCashCtrl" 
+	  aria-expanded="true" aria-controls="CashReconNetCashCtrl">
+        <li>CashReconNetCash</li>
+      </button>
+    </h2>
+    <div id="CashReconNetCashCtrl" class="accordion-collapse collapse" aria-labelledby="CashReconNetCash" 
+	data-bs-parent="#accordionCashReconNetCash">
+      <div class="accordion-body">
+Ensure that the net cash value is correctly calculated after placing a and resulting a bet.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCashReconPayout">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CashReconPayout">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CashReconPayoutCtrl" 
+	  aria-expanded="true" aria-controls="CashReconPayoutCtrl">
+        <li>CashReconPayout</li>
+      </button>
+    </h2>
+    <div id="CashReconPayoutCtrl" class="accordion-collapse collapse" aria-labelledby="CashReconPayout" 
+	data-bs-parent="#accordionCashReconPayout">
+      <div class="accordion-body">
+Ensure that the payout value is correctly calculated after placing a and resulting a bet.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCashReconRefunded">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CashReconRefunded">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CashReconRefundedCtrl" 
+	  aria-expanded="true" aria-controls="CashReconRefundedCtrl">
+        <li>CashReconRefunded</li>
+      </button>
+    </h2>
+    <div id="CashReconRefundedCtrl" class="accordion-collapse collapse" aria-labelledby="CashReconRefunded" 
+	data-bs-parent="#accordionCashReconRefunded">
+      <div class="accordion-body">
+Ensure that the refunded value is correctly calculated after refunding a bet.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCashReconVariance">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CashReconVariance">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CashReconVarianceCtrl" 
+	  aria-expanded="true" aria-controls="CashReconVarianceCtrl">
+        <li>CashReconVariance</li>
+      </button>
+    </h2>
+    <div id="CashReconVarianceCtrl" class="accordion-collapse collapse" aria-labelledby="CashReconVariance" 
+	data-bs-parent="#accordionCashReconVariance">
+      <div class="accordion-body">
+Place lotto bet and check the cash recon variables include values of placed bet.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionCashReconVolume">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CashReconVolume">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CashReconVolumeCtrl" 
+	  aria-expanded="true" aria-controls="CashReconVolumeCtrl">
+        <li>CashReconVolume</li>
+      </button>
+    </h2>
+    <div id="CashReconVolumeCtrl" class="accordion-collapse collapse" aria-labelledby="CashReconVolume" 
+	data-bs-parent="#accordionCashReconVolume">
+      <div class="accordion-body">
+	  Ensure that the volume value is correctly calculated after placing a bet.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionPlaceBetAndCheckStake">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="PlaceBetAndCheckStake">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#PlaceBetAndCheckStakeCtrl" 
+	  aria-expanded="true" aria-controls="PlaceBetAndCheckStakeCtrl">
+        <li>PlaceBetAndCheckStake</li>
+      </button>
+    </h2>
+    <div id="PlaceBetAndCheckStakeCtrl" class="accordion-collapse collapse" aria-labelledby="PlaceBetAndCheckStake" 
+	data-bs-parent="#accordionPlaceBetAndCheckStake">
+      <div class="accordion-body">
+	  Place bet and ensure that cash recon takes the bet stake into its calculations.
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionTransferFunds">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="TransferFunds">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#TransferFundsCtrl" 
+	  aria-expanded="true" aria-controls="TransferFundsCtrl">
+        <li>TransferFunds</li>
+      </button>
+    </h2>
+    <div id="TransferFundsCtrl" class="accordion-collapse collapse" aria-labelledby="TransferFunds" 
+	data-bs-parent="#accordionTransferFunds">
+      <div class="accordion-body">
+	  Ensure cash recon correctly calculates cash transfers by users.
+</div>
+	  </div>
+	    </div>
+</div>
+</ol>
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionGGRTaxTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="GGRTaxTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#GGRTaxTestsCtrl" 
+	  aria-expanded="true" aria-controls="GGRTaxTestsCtrl">
+       <li>GGRTaxTests</li>
+	   <span class="badge badge-dark" id="GGRTaxTests_Span"></span>
+      </button>
+    </h2>
+    <div id="GGRTaxTestsCtrl" class="accordion-collapse collapse" aria-labelledby="GGRTaxTests" 
+	data-bs-parent="#accordionGGRTaxTests">
+      <div class="accordion-body">
+	<ol id="GGRTaxTests1">
+	<div class="accordion" id="accordionCheckTaxCalculatedLosingBets">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CheckTaxCalculatedLosingBets">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CheckTaxCalculatedLosingBetsCtrl" 
+	  aria-expanded="true" aria-controls="CheckTaxCalculatedLosingBetsCtrl">
+        <li>CheckTaxCalculatedLosingBets</li>
+      </button>
+    </h2>
+    <div id="CheckTaxCalculatedLosingBetsCtrl" class="accordion-collapse collapse" aria-labelledby="CheckTaxCalculatedLosingBets" 
+	data-bs-parent="#accordionCheckTaxCalculatedLosingBets">
+      <div class="accordion-body">
+	Check tax calculations on a losing bet are correct.
+</div>
+	  </div>
+	    </div>
+</div> 
+	
+	<div class="accordion" id="accordionCheckTaxCalculatedLosingBetTaxRateChangedPriorToResulting">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CheckTaxCalculatedLosingBetTaxRateChangedPriorToResulting">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CheckTaxCalculatedLosingBetTaxRateChangedPriorToResultingCtrl" 
+	  aria-expanded="true" aria-controls="CheckTaxCalculatedLosingBetTaxRateChangedPriorToResultingCtrl">
+        <li>CheckTaxCalculatedLosingBetTaxRateChangedPriorToResulting</li>
+      </button>
+    </h2>
+    <div id="CheckTaxCalculatedLosingBetTaxRateChangedPriorToResultingCtrl" class="accordion-collapse collapse" aria-labelledby="CheckTaxCalculatedLosingBetTaxRateChangedPriorToResulting" 
+	data-bs-parent="#accordionCheckTaxCalculatedLosingBetTaxRateChangedPriorToResulting">
+      <div class="accordion-body">
+Checks the tax calculated losing bet tax rate changed prior to resulting.
+</div>
+	  </div>
+	    </div>
+</div> 
+	
+		<div class="accordion" id="accordionCheckTaxCalculatedNotResulted">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CheckTaxCalculatedNotResulted">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CheckTaxCalculatedNotResultedCtrl" 
+	  aria-expanded="true" aria-controls="CheckTaxCalculatedNotResultedCtrl">
+        <li>CheckTaxCalculatedNotResulted</li>
+      </button>
+    </h2>
+    <div id="CheckTaxCalculatedNotResultedCtrl" class="accordion-collapse collapse" aria-labelledby="CheckTaxCalculatedNotResulted" 
+	data-bs-parent="#accordionCheckTaxCalculatedNotResulted">
+      <div class="accordion-body">
+Checks the tax calculated not resulted.
+</div>
+	  </div>
+	    </div>
+</div> 
+	
+<div class="accordion" id="accordionCheckTaxCalculatedTaxRateChangedNotResulted">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CheckTaxCalculatedTaxRateChangedNotResulted">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CheckTaxCalculatedTaxRateChangedNotResultedCtrl" 
+	  aria-expanded="true" aria-controls="CheckTaxCalculatedTaxRateChangedNotResultedCtrl">
+        <li>CheckTaxCalculatedTaxRateChangedNotResulted</li>
+      </button>
+    </h2>
+    <div id="CheckTaxCalculatedTaxRateChangedNotResultedCtrl" class="accordion-collapse collapse" aria-labelledby="CheckTaxCalculatedTaxRateChangedNotResulted" 
+	data-bs-parent="#accordionCheckTaxCalculatedTaxRateChangedNotResulted">
+      <div class="accordion-body">
+Checks the tax calculated tax rate changed not resulted.
+</div>
+	  </div>
+	</div>    
+	</div>
+	
+	<div class="accordion" id="accordionCheckTaxCalculatedWinningAndLosingBets">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CheckTaxCalculatedWinningAndLosingBets">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CheckTaxCalculatedWinningAndLosingBetsCtrl" 
+	  aria-expanded="true" aria-controls="CheckTaxCalculatedWinningAndLosingBetsCtrl">
+        <li>CheckTaxCalculatedWinningAndLosingBets</li>
+      </button>
+    </h2>
+    <div id="CheckTaxCalculatedWinningAndLosingBetsCtrl" class="accordion-collapse collapse" aria-labelledby="CheckTaxCalculatedWinningAndLosingBets" 
+	data-bs-parent="#accordionCheckTaxCalculatedWinningAndLosingBets">
+      <div class="accordion-body">
+Checks the tax calculated not resulted.+-</div>
+	  </div>
+	</div>    
+	</div>
+	
+		<div class="accordion" id="accordionCheckTaxCalculatedWinningAndLosingBetsChangeTaxPriorToResulting">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CheckTaxCalculatedWinningAndLosingBetsChangeTaxPriorToResulting">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CheckTaxCalculatedWinningAndLosingBetsChangeTaxPriorToResultingCtrl" 
+	  aria-expanded="true" aria-controls="CheckTaxCalculatedWinningAndLosingBetsChangeTaxPriorToResultingCtrl">
+        <li>CheckTaxCalculatedWinningAndLosingBetsChangeTaxPriorToResulting</li>
+      </button>
+    </h2>
+    <div id="CheckTaxCalculatedWinningAndLosingBetsChangeTaxPriorToResultingCtrl" class="accordion-collapse collapse" aria-labelledby="CheckTaxCalculatedWinningAndLosingBetsChangeTaxPriorToResulting" 
+	data-bs-parent="#accordionCheckTaxCalculatedWinningAndLosingBetsChangeTaxPriorToResulting">
+      <div class="accordion-body">
+Checks the tax calculated winning and losing bets and change the tax rate before resulting.</div>
+	  </div>
+	</div>    
+	</div>
+	
+		<div class="accordion" id="accordionCheckTaxCalculatedWinningBets">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CheckTaxCalculatedWinningBets">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CheckTaxCalculatedWinningBetsCtrl" 
+	  aria-expanded="true" aria-controls="CheckTaxCalculatedWinningBetsCtrl">
+        <li>CheckTaxCalculatedWinningBets</li>
+      </button>
+    </h2>
+    <div id="CheckTaxCalculatedWinningBetsCtrl" class="accordion-collapse collapse" aria-labelledby="CheckTaxCalculatedWinningBets" 
+	data-bs-parent="#accordionCheckTaxCalculatedWinningBets">
+      <div class="accordion-body">
+Checks the tax calculated winning after changes in tax.
+</div>
+	  </div>
+	</div>    
+	</div>
+	
+	<div class="accordion" id="accordionCheckTaxCalculatedWinningBetsChangeTaxPriorToResult">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CheckTaxCalculatedWinningBetsChangeTaxPriorToResult">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CheckTaxCalculatedWinningBetsChangeTaxPriorToResultCtrl" 
+	  aria-expanded="true" aria-controls="CheckTaxCalculatedWinningBetsChangeTaxPriorToResultCtrl">
+        <li>CheckTaxCalculatedWinningBetsChangeTaxPriorToResult</li>
+      </button>
+    </h2>
+    <div id="CheckTaxCalculatedWinningBetsChangeTaxPriorToResultCtrl" class="accordion-collapse collapse" aria-labelledby="CheckTaxCalculatedWinningBetsChangeTaxPriorToResult" 
+	data-bs-parent="#accordionCheckTaxCalculatedWinningBetsChangeTaxPriorToResult">
+      <div class="accordion-body">
+Checks the tax calculated winning after changes in tax.
+</div>
+	  </div>
+	</div>    
+	</div>
+	
+	<div class="accordion" id="accordionCheckVatOnTaxReport">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CheckVatOnTaxReport">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CheckVatOnTaxReportCtrl" 
+	  aria-expanded="true" aria-controls="CheckVatOnTaxReportCtrl">
+        <li>CheckVatOnTaxReport</li>
+      </button>
+    </h2>
+    <div id="CheckVatOnTaxReportCtrl" class="accordion-collapse collapse" aria-labelledby="CheckVatOnTaxReport" 
+	data-bs-parent="#accordionCheckVatOnTaxReport">
+      <div class="accordion-body">
+Check Vat calcuations are correct.
+</div>
+	  </div>
+	</div>    
+	</div>
+	
+	<div class="accordion" id="accordionExcess_Liability_In_Tax_Report_At_Region_Level">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Excess_Liability_In_Tax_Report_At_Region_Level">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Excess_Liability_In_Tax_Report_At_Region_LevelCtrl" 
+	  aria-expanded="true" aria-controls="Excess_Liability_In_Tax_Report_At_Region_LevelCtrl">
+        <li>Excess_Liability_In_Tax_Report_At_Region_Level</li>
+      </button>
+    </h2>
+    <div id="Excess_Liability_In_Tax_Report_At_Region_LevelCtrl" class="accordion-collapse collapse" aria-labelledby="Excess_Liability_In_Tax_Report_At_Region_Level" 
+	data-bs-parent="#accordionExcess_Liability_In_Tax_Report_At_Region_Level">
+      <div class="accordion-body">
+Ensure EoL is correctly calculated at the Region level.
+</div>
+	  </div>
+	</div>    
+	</div>
+	
+	<div class="accordion" id="accordionExcess_Liability_KZN_Tax_On_Winnings">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Excess_Liability_KZN_Tax_On_Winnings">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Excess_Liability_KZN_Tax_On_WinningsCtrl" 
+	  aria-expanded="true" aria-controls="Excess_Liability_KZN_Tax_On_WinningsCtrl">
+        <li>Excess_Liability_KZN_Tax_On_Winnings</li>
+      </button>
+    </h2>
+    <div id="Excess_Liability_KZN_Tax_On_WinningsCtrl" class="accordion-collapse collapse" aria-labelledby="Excess_Liability_KZN_Tax_On_Winnings" 
+	data-bs-parent="#accordionExcess_Liability_KZN_Tax_On_Winnings">
+      <div class="accordion-body">
+Ensure EoL calculations are correct on KZN tax report using "tax on Winnings".
+</div>
+	  </div>
+	</div>    
+	</div>
+	
+ <div class="accordion" id="accordionKZN_Tax_Report_Statement_A_Lotto">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="KZN_Tax_Report_Statement_A_Lotto">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#KZN_Tax_Report_Statement_A_LottoCtrl" 
+	  aria-expanded="true" aria-controls="KZN_Tax_Report_Statement_A_LottoCtrl">
+        <li>KZN_Tax_Report_Statement_A_Lotto</li>
+      </button>
+    </h2>
+    <div id="KZN_Tax_Report_Statement_A_LottoCtrl" class="accordion-collapse collapse" aria-labelledby="KZN_Tax_Report_Statement_A_Lotto" 
+	data-bs-parent="#accordionKZN_Tax_Report_Statement_A_Lotto">
+      <div class="accordion-body">
+Ensure the KZN values are correctly calculated in the tax report for lotto.
+</div>
+	  </div>
+	</div>    
+	</div>
+	
+	<div class="accordion" id="accordionKZN_Tax_Report_Statement_A_Sport">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="KZN_Tax_Report_Statement_A_Sport">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#KZN_Tax_Report_Statement_A_SportCtrl" 
+	  aria-expanded="true" aria-controls="KZN_Tax_Report_Statement_A_SportCtrl">
+        <li>KZN_Tax_Report_Statement_A_Sport</li>
+      </button>
+    </h2>
+    <div id="KZN_Tax_Report_Statement_A_SportCtrl" class="accordion-collapse collapse" aria-labelledby="KZN_Tax_Report_Statement_A_Sport" 
+	data-bs-parent="#accordionKZN_Tax_Report_Statement_A_Sport">
+      <div class="accordion-body">
+Ensure the KZN values are correctly calculated in the tax report for sport.
+</div>
+	  </div>
+	</div>    
+	</div>
+	
+<div class="accordion" id="accordionKZN_Tax_Report_Statement_D_Lotto">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="KZN_Tax_Report_Statement_D_Lotto">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#KZN_Tax_Report_Statement_D_LottoCtrl" 
+	  aria-expanded="true" aria-controls="KZN_Tax_Report_Statement_D_LottoCtrl">
+        <li>KZN_Tax_Report_Statement_D_Lotto</li>
+      </button>
+    </h2>
+    <div id="KZN_Tax_Report_Statement_D_LottoCtrl" class="accordion-collapse collapse" aria-labelledby="KZN_Tax_Report_Statement_D_Lotto" 
+	data-bs-parent="#accordionKZN_Tax_Report_Statement_D_Lotto">
+      <div class="accordion-body">
+Ensure the KZN values are correctly calculated in the tax report for lotto in Statement D.
+</div>
+	  </div>
+	</div>    
+	</div>
+	
+<div class="accordion" id="accordionKZN_Tax_Report_Statement_D_Sport">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="KZN_Tax_Report_Statement_D_Sport">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#KZN_Tax_Report_Statement_D_SportCtrl" 
+	  aria-expanded="true" aria-controls="KZN_Tax_Report_Statement_D_SportCtrl">
+        <li>KZN_Tax_Report_Statement_D_Sport</li>
+      </button>
+    </h2>
+    <div id="KZN_Tax_Report_Statement_D_SportCtrl" class="accordion-collapse collapse" aria-labelledby="KZN_Tax_Report_Statement_D_Sport" 
+	data-bs-parent="#accordionKZN_Tax_Report_Statement_D_Sport">
+      <div class="accordion-body">
+Ensure the KZN values are correctly calculated in the tax report for sport in Statement D.
+</div>
+	  </div>
+	</div>    
+	</div>	
+		
+<div class="accordion" id="accordionMixed_Multiple_On_The_Tax_Report">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Mixed_Multiple_On_The_Tax_Report">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Mixed_Multiple_On_The_Tax_ReportCtrl" 
+	  aria-expanded="true" aria-controls="Mixed_Multiple_On_The_Tax_ReportCtrl">
+        <li>Mixed_Multiple_On_The_Tax_Report</li>
+      </button>
+    </h2>
+    <div id="Mixed_Multiple_On_The_Tax_ReportCtrl" class="accordion-collapse collapse" aria-labelledby="Mixed_Multiple_On_The_Tax_Report" 
+	data-bs-parent="#accordionMixed_Multiple_On_The_Tax_Report">
+      <div class="accordion-body">
+Checks the tax calculated winning and losing bets.
+</div>
+	  </div>
+	</div>    
+	</div>	
+	
+	<div class="accordion" id="accordionWinning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_Bet">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Winning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_Bet">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Winning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_BetCtrl" 
+	  aria-expanded="true" aria-controls="Winning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_BetCtrl">
+        <li>Winning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_Bet</li>
+      </button>
+    </h2>
+    <div id="Winning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_BetCtrl" class="accordion-collapse collapse" aria-labelledby="Winning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_Bet" 
+	data-bs-parent="#accordionWinning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_Bet">
+      <div class="accordion-body">
+Check tax report values for a winning multiple bet with bonus stretch.
+</div>
+	  </div>
+	</div>    
+	</div>	
+	
+	<div class="accordion" id="accordionWinning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_Leg">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Winning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_Leg">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Winning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_LegCtrl" 
+	  aria-expanded="true" aria-controls="Winning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_LegCtrl">
+        <li>Winning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_Leg</li>
+      </button>
+    </h2>
+    <div id="Winning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_LegCtrl" class="accordion-collapse collapse" aria-labelledby="Winning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_Leg" 
+	data-bs-parent="#accordionWinning_Multiple_With_Bonus_Stretch_On_Tax_Report_Tax_On_Leg">
+      <div class="accordion-body">
+Check tax report values for a winning multiple bet with bonus stretch with "tax on leg" calculations.
+</div>
+	  </div>
+	</div>    
+	</div>	
+	
+		<div class="accordion" id="accordionWinning_Tax_Adjustments">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Winning_Tax_Adjustments">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Winning_Tax_AdjustmentsCtrl" 
+	  aria-expanded="true" aria-controls="Winning_Tax_AdjustmentsCtrl">
+        <li>Winning_Tax_Adjustments</li>
+      </button>
+    </h2>
+    <div id="Winning_Tax_AdjustmentsCtrl" class="accordion-collapse collapse" aria-labelledby="Winning_Tax_Adjustments" 
+	data-bs-parent="#accordionWinning_Tax_Adjustments">
+      <div class="accordion-body">
+Check tax report values for a winning bet.
+</div>
+	  </div>
+	</div>    
+	</div>	
+	
+	</ol>
+</div>
+	  </div>
+	    </div>
+</div>
+
+<div class="accordion" id="accordionMixedMultipleTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="MixedMultipleTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#MixedMultipleTestsCtrl" 
+	  aria-expanded="true" aria-controls="MixedMultipleTestsCtrl">
+        <li>MixedMultipleTests</li>
+		   <span class="badge badge-dark" id="MixedMultipleTests_Span"></span>
+      </button>
+    </h2>
+    <div id="MixedMultipleTestsCtrl" class="accordion-collapse collapse" aria-labelledby="MixedMultipleTests" 
+	data-bs-parent="#accordionMixedMultipleTests">
+      <div class="accordion-body">
+	  <ol id="MixedMultipleTests1">
+	  	<div class="accordion" id="accordionPlace_A_Mixed_Multiple_Bet">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place_A_Mixed_Multiple_Bet">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place_A_Mixed_Multiple_BetCtrl" 
+	  aria-expanded="true" aria-controls="Place_A_Mixed_Multiple_BetCtrl">
+        <li>Place_A_Mixed_Multiple_Bet</li>
+      </button>
+    </h2>
+    <div id="Place_A_Mixed_Multiple_BetCtrl" class="accordion-collapse collapse" aria-labelledby="Place_A_Mixed_Multiple_Bet" 
+	data-bs-parent="#accordionPlace_A_Mixed_Multiple_Bet">
+      <div class="accordion-body">
+	 Ensure a mixed sport bet can be placed.
+</div>
+	  </div>
+	</div>    
+	</div>	  
+	  </ol>
+</div>
+	  </div>
+	</div>    
+	</div>	
+
+<div class="accordion" id="accordionOddsProfileTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="OddsProfileTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#OddsProfileTestsCtrl" 
+	  aria-expanded="true" aria-controls="OddsProfileTestsCtrl">
+        <li>OddsProfileTests</li>
+		  <span class="badge badge-dark" id="OddsProfileTests_Span"></span>
+      </button>
+    </h2>
+    <div id="OddsProfileTestsCtrl" class="accordion-collapse collapse" aria-labelledby="OddsProfileTests" 
+	data-bs-parent="#accordionOddsProfileTests">
+      <div class="accordion-body">
+	<ol id="OddsProfileTests1">
+	<div class="accordion" id="accordionCreateOddsProfile">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CreateOddsProfile">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CreateOddsProfileCtrl" 
+	  aria-expanded="true" aria-controls="CreateOddsProfileCtrl">
+        <li>CreateOddsProfile</li>
+      </button>
+    </h2>
+    <div id="CreateOddsProfileCtrl" class="accordion-collapse collapse" aria-labelledby="CreateOddsProfile" 
+	data-bs-parent="#accordionCreateOddsProfile">
+      <div class="accordion-body">
+	 No method information provided.
+</div>
+	  </div>
+	</div>    
+	</div>
+	
+	<div class="accordion" id="accordionDeleteOddsProfile">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="DeleteOddsProfile">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#DeleteOddsProfileCtrl" 
+	  aria-expanded="true" aria-controls="DeleteOddsProfileCtrl">
+        <li>DeleteOddsProfile</li>
+      </button>
+    </h2>
+    <div id="DeleteOddsProfileCtrl" class="accordion-collapse collapse" aria-labelledby="DeleteOddsProfile" 
+	data-bs-parent="#accordionDeleteOddsProfile">
+      <div class="accordion-body">
+	 No method information provided.
+</div>
+	  </div>
+	</div>    
+	</div>	
+	
+<div class="accordion" id="accordionGetOddsProfiles">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="GetOddsProfiles">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#GetOddsProfilesCtrl" 
+	  aria-expanded="true" aria-controls="GetOddsProfilesCtrl">
+        <li>GetOddsProfiles</li>
+      </button>
+    </h2>
+    <div id="GetOddsProfilesCtrl" class="accordion-collapse collapse" aria-labelledby="GetOddsProfiles" 
+	data-bs-parent="#accordionGetOddsProfiles">
+      <div class="accordion-body">
+	 No method information provided.
+</div>
+	  </div>
+	</div>    
+	</div>	
+	
+	<div class="accordion" id="accordionPlace_Bet_On_Odds_Profile_With_New_DrawAsync">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place_Bet_On_Odds_Profile_With_New_DrawAsync">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place_Bet_On_Odds_Profile_With_New_DrawAsyncCtrl" 
+	  aria-expanded="true" aria-controls="Place_Bet_On_Odds_Profile_With_New_DrawAsyncCtrl">
+        <li>Place_Bet_On_Odds_Profile_With_New_DrawAsync</li>
+      </button>
+    </h2>
+    <div id="Place_Bet_On_Odds_Profile_With_New_DrawAsyncCtrl" class="accordion-collapse collapse" aria-labelledby="Place_Bet_On_Odds_Profile_With_New_DrawAsync" 
+	data-bs-parent="#accordionPlace_Bet_On_Odds_Profile_With_New_DrawAsync">
+      <div class="accordion-body">
+	 No method information provided.
+</div>
+	  </div>
+	</div>    
+	</div>
+	
+	<div class="accordion" id="accordionPlace_Bet_On_Odds_Profile_With_Old_Draw">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place_Bet_On_Odds_Profile_With_Old_Draw">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place_Bet_On_Odds_Profile_With_Old_DrawCtrl" 
+	  aria-expanded="true" aria-controls="Place_Bet_On_Odds_Profile_With_Old_DrawCtrl">
+        <li>Place_Bet_On_Odds_Profile_With_Old_Draw</li>
+      </button>
+    </h2>
+    <div id="Place_Bet_On_Odds_Profile_With_Old_DrawCtrl" class="accordion-collapse collapse" aria-labelledby="Place_Bet_On_Odds_Profile_With_Old_Draw" 
+	data-bs-parent="#accordionPlace_Bet_On_Odds_Profile_With_Old_Draw">
+      <div class="accordion-body">
+	 No method information provided.
+</div>
+	  </div>
+	</div>    
+	</div>
+	
+<div class="accordion" id="accordionUpdateOddsProfile">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="UpdateOddsProfile">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#UpdateOddsProfileCtrl" 
+	  aria-expanded="true" aria-controls="UpdateOddsProfileCtrl">
+        <li>UpdateOddsProfile</li>
+      </button>
+    </h2>
+    <div id="UpdateOddsProfileCtrl" class="accordion-collapse collapse" aria-labelledby="UpdateOddsProfile" 
+	data-bs-parent="#accordionUpdateOddsProfile">
+      <div class="accordion-body">
+	 No method information provided.
+</div>
+	  </div>
+	</div>    
+	</div>
+	</ol>
+</div>
+	  </div>
+	</div>    
+	</div>	
+
+<div class="accordion" id="accordionPayoutBetsPermissionsTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="PayoutBetsPermissionsTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#PayoutBetsPermissionsTestsCtrl" 
+	  aria-expanded="true" aria-controls="PayoutBetsPermissionsTestsCtrl">
+        <li>PayoutBetsPermissionsTests</li>
+		 <span class="badge badge-dark" id="PayoutBetsPermissionsTests_Span"></span>
+      </button>
+    </h2>
+    <div id="PayoutBetsPermissionsTestsCtrl" class="accordion-collapse collapse" aria-labelledby="PayoutBetsPermissionsTests" 
+	data-bs-parent="#accordionPayoutBetsPermissionsTests">
+      <div class="accordion-body">
+	<ol id="PayoutBetsPermissionsTests1">
+	<div class="accordion" id="accordionPay_out_Bet_Any_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Pay_out_Bet_Any_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Pay_out_Bet_Any_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Pay_out_Bet_Any_EnabledCtrl">
+        <li>Pay_out_Bet_Any_Enabled</li>
+      </button>
+    </h2>
+    <div id="Pay_out_Bet_Any_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Pay_out_Bet_Any_Enabled" 
+	data-bs-parent="#accordionPay_out_Bet_Any_Enabled">
+      <div class="accordion-body">
+	Check that payout bet permission functions.
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<div class="accordion" id="accordionPay_out_Bet_EFT_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Pay_out_Bet_EFT_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Pay_out_Bet_EFT_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Pay_out_Bet_EFT_EnabledCtrl">
+        <li>Pay_out_Bet_EFT_Enabled</li>
+      </button>
+    </h2>
+    <div id="Pay_out_Bet_EFT_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Pay_out_Bet_EFT_Enabled" 
+	data-bs-parent="#accordionPay_out_Bet_EFT_Enabled">
+      <div class="accordion-body">
+	Check that payout EFT bet permission functions.
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<div class="accordion" id="accordionPay_out_Bet_Without_Pin_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Pay_out_Bet_Without_Pin_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Pay_out_Bet_Without_Pin_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Pay_out_Bet_Without_Pin_EnabledCtrl">
+        <li>Pay_out_Bet_Without_Pin_Enabled</li>
+      </button>
+    </h2>
+    <div id="Pay_out_Bet_Without_Pin_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Pay_out_Bet_Without_Pin_Enabled" 
+	data-bs-parent="#accordionPay_out_Bet_Without_Pin_Enabled">
+      <div class="accordion-body">
+	Check that payout bet without PIN permission functions.
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<div class="accordion" id="accordionPayout_Bet_My_Branch_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Payout_Bet_My_Branch_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Payout_Bet_My_Branch_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Payout_Bet_My_Branch_EnabledCtrl">
+        <li>Payout_Bet_My_Branch_Enabled</li>
+      </button>
+    </h2>
+    <div id="Payout_Bet_My_Branch_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Payout_Bet_My_Branch_Enabled" 
+	data-bs-parent="#accordionPayout_Bet_My_Branch_Enabled">
+      <div class="accordion-body">
+	Positive test for Pay out Bet – MY Branch
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<div class="accordion" id="accordionPayout_Bet_My_Company_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Payout_Bet_My_Company_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Payout_Bet_My_Company_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Payout_Bet_My_Company_EnabledCtrl">
+        <li>Payout_Bet_My_Company_Enabled</li>
+      </button>
+    </h2>
+    <div id="Payout_Bet_My_Company_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Payout_Bet_My_Company_Enabled" 
+	data-bs-parent="#accordionPayout_Bet_My_Company_Enabled">
+      <div class="accordion-body">
+	Positive test for Pay out Bet – MY Company
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<div class="accordion" id="accordionPayout_Bet_Todays_Bet_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Payout_Bet_Todays_Bet_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Payout_Bet_Todays_Bet_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Payout_Bet_Todays_Bet_EnabledCtrl">
+        <li>Payout_Bet_Todays_Bet_Enabled</li>
+      </button>
+    </h2>
+    <div id="Payout_Bet_Todays_Bet_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Payout_Bet_Todays_Bet_Enabled" 
+	data-bs-parent="#accordionPayout_Bet_Todays_Bet_Enabled">
+      <div class="accordion-body">
+	Positive test for Pay out Bet – Today's bet only
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	<div class="accordion" id="accordionPayout_Single_Bet_On_a_Betslip_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Payout_Single_Bet_On_a_Betslip_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Payout_Single_Bet_On_a_Betslip_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Payout_Single_Bet_On_a_Betslip_EnabledCtrl">
+        <li>Payout_Single_Bet_On_a_Betslip_Enabled</li>
+      </button>
+    </h2>
+    <div id="Payout_Single_Bet_On_a_Betslip_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Payout_Single_Bet_On_a_Betslip_Enabled" 
+	data-bs-parent="#accordionPayout_Single_Bet_On_a_Betslip_Enabled">
+      <div class="accordion-body">
+Check that payout single bet permission functions.
+	</div>
+	</div>
+	</div>
+	</div>
+	
+<div class="accordion" id="accordionPayout_Single_Bet_On_a_Betslip_With_PIN">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Payout_Single_Bet_On_a_Betslip_With_PIN">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Payout_Single_Bet_On_a_Betslip_With_PINCtrl" 
+	  aria-expanded="true" aria-controls="Payout_Single_Bet_On_a_Betslip_With_PINCtrl">
+        <li>Payout_Single_Bet_On_a_Betslip_With_PIN</li>
+      </button>
+    </h2>
+    <div id="Payout_Single_Bet_On_a_Betslip_With_PINCtrl" class="accordion-collapse collapse" aria-labelledby="Payout_Single_Bet_On_a_Betslip_With_PIN" 
+	data-bs-parent="#accordionPayout_Single_Bet_On_a_Betslip_With_PIN">
+      <div class="accordion-body">
+Payout a bet using a PIN.
+	</div>
+	</div>
+	</div>
+	</div>	
+	</ol>
+	</div>
+	</div>
+	</div>
+	</div>
+
+<div class="accordion" id="accordionPunterTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="PunterTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#PunterTestsCtrl" 
+	  aria-expanded="true" aria-controls="PunterTestsCtrl">
+        <li>PunterTests</li>
+		 <span class="badge badge-dark" id="PunterTests_Span"></span>
+      </button>
+    </h2>
+    <div id="PunterTestsCtrl" class="accordion-collapse collapse" aria-labelledby="PunterTests" 
+	data-bs-parent="#accordionPunterTests">
+      <div class="accordion-body">
+	<ol id="PunterTests1">
+<div class="accordion" id="accordionCreate_Punter_Account_Disabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Create_Punter_Account_Disabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Create_Punter_Account_DisabledCtrl" 
+	  aria-expanded="true" aria-controls="Create_Punter_Account_DisabledCtrl">
+        <li>Create_Punter_Account_Disabled</li>
+      </button>
+    </h2>
+    <div id="Create_Punter_Account_DisabledCtrl" class="accordion-collapse collapse" aria-labelledby="Create_Punter_Account_Disabled" 
+	data-bs-parent="#accordionCreate_Punter_Account_Disabled">
+      <div class="accordion-body">
+	 Creating a punter account fails when permission disabled.
+	</div>
+</div>
+</div>
+</div> 
+
+<div class="accordion" id="accordionCreate_Punter_Account_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Create_Punter_Account_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Create_Punter_Account_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Create_Punter_Account_EnabledCtrl">
+        <li>Create_Punter_Account_Enabled</li>
+      </button>
+    </h2>
+    <div id="Create_Punter_Account_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Create_Punter_Account_Enabled" 
+	data-bs-parent="#accordionCreate_Punter_Account_Enabled">
+      <div class="accordion-body">
+	Deposit funds to punter permission enabled and disabled.
+	</div>
+</div>
+</div>
+</div> 
+
+<div class="accordion" id="accordionDismiss_User">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Dismiss_User">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Dismiss_UserCtrl" 
+	  aria-expanded="true" aria-controls="Dismiss_UserCtrl">
+        <li>Dismiss_User</li>
+      </button>
+    </h2>
+    <div id="Dismiss_UserCtrl" class="accordion-collapse collapse" aria-labelledby="Dismiss_User" 
+	data-bs-parent="#accordionDismiss_User">
+      <div class="accordion-body">
+	Test to Dismiss user.
+	</div>
+</div>
+</div>
+</div> 
+
+<div class="accordion" id="accordionLookupBetLaidByPunter">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="LookupBetLaidByPunter">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#LookupBetLaidByPunterCtrl" 
+	  aria-expanded="true" aria-controls="LookupBetLaidByPunterCtrl">
+        <li>LookupBetLaidByPunter</li>
+      </button>
+    </h2>
+    <div id="LookupBetLaidByPunterCtrl" class="accordion-collapse collapse" aria-labelledby="LookupBetLaidByPunter" 
+	data-bs-parent="#accordionLookupBetLaidByPunter">
+      <div class="accordion-body">
+	Lookup a ticket laid with a punter account.
+	</div>
+</div>
+</div>
+</div> 
+
+ <div class="accordion" id="accordionProcess_Punter_Journal_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Process_Punter_Journal_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Process_Punter_Journal_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Process_Punter_Journal_EnabledCtrl">
+        <li>Process_Punter_Journal_Enabled</li>
+      </button>
+    </h2>
+    <div id="Process_Punter_Journal_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Process_Punter_Journal_Enabled" 
+	data-bs-parent="#accordionProcess_Punter_Journal_Enabled">
+      <div class="accordion-body">
+	Process journals Ensure that you have View Punter Accounts, View Punter Transactions and Process journals permissions. Find a Punter who has a credit balance. Journal deposit amount
+	</div>
+</div>
+</div>
+</div> 
+ 
+  <div class="accordion" id="accordionSearch_For_Punters_Disabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Search_For_Punters_Disabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Search_For_Punters_DisabledCtrl" 
+	  aria-expanded="true" aria-controls="Search_For_Punters_DisabledCtrl">
+        <li>Search_For_Punters_Disabled</li>
+      </button>
+    </h2>
+    <div id="Search_For_Punters_DisabledCtrl" class="accordion-collapse collapse" aria-labelledby="Search_For_Punters_Disabled" 
+	data-bs-parent="#accordionSearch_For_Punters_Disabled">
+      <div class="accordion-body">
+Check that search for punter permission prevents. search when disabled.	
+	</div>
+</div>
+</div>
+</div> 
+ 
+   <div class="accordion" id="accordionSearch_For_Punters_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Search_For_Punters_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Search_For_Punters_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Search_For_Punters_EnabledCtrl">
+        <li>Search_For_Punters_Enabled</li>
+      </button>
+    </h2>
+    <div id="Search_For_Punters_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Search_For_Punters_Enabled" 
+	data-bs-parent="#accordionSearch_For_Punters_Enabled">
+      <div class="accordion-body">
+Check that search for punter permission functions.
+	</div>
+</div>
+</div>
+</div> 
+ 
+  <div class="accordion" id="accordionUpdate_FICA_Status_Enabled_Disabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Update_FICA_Status_Enabled_Disabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Update_FICA_Status_Enabled_DisabledCtrl" 
+	  aria-expanded="true" aria-controls="Update_FICA_Status_Enabled_DisabledCtrl">
+        <li>Update_FICA_Status_Enabled_Disabled</li>
+      </button>
+    </h2>
+    <div id="Update_FICA_Status_Enabled_DisabledCtrl" class="accordion-collapse collapse" aria-labelledby="Update_FICA_Status_Enabled_Disabled" 
+	data-bs-parent="#accordionUpdate_FICA_Status_Enabled_Disabled">
+      <div class="accordion-body">
+Punter FICA update permission functions correctly when enabled and disabled.
+	</div>
+</div>
+</div>
+</div> 
+ 
+  <div class="accordion" id="accordionView_Account_Number_Punter_Account_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="View_Account_Number_Punter_Account_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#View_Account_Number_Punter_Account_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="View_Account_Number_Punter_Account_EnabledCtrl">
+        <li>View_Account_Number_Punter_Account_Enabled</li>
+      </button>
+    </h2>
+    <div id="View_Account_Number_Punter_Account_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="View_Account_Number_Punter_Account_Enabled" 
+	data-bs-parent="#accordionView_Account_Number_Punter_Account_Enabled">
+      <div class="accordion-body">
+view punter account number permission.
+	</div>
+</div>
+</div>
+</div> 
+ 
+ <div class="accordion" id="accordionView_Punter_Account_Disabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="View_Punter_Account_Disabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#View_Punter_Account_DisabledCtrl" 
+	  aria-expanded="true" aria-controls="View_Punter_Account_DisabledCtrl">
+        <li>View_Punter_Account_Disabled</li>
+      </button>
+    </h2>
+    <div id="View_Punter_Account_DisabledCtrl" class="accordion-collapse collapse" aria-labelledby="View_Punter_Account_Disabled" 
+	data-bs-parent="#accordionView_Punter_Account_Disabled">
+      <div class="accordion-body">
+View a punter account fails when permission disabled.
+	</div>
+</div>
+</div>
+</div> 
+ 
+<div class="accordion" id="accordionView_Punter_Account_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="View_Punter_Account_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#View_Punter_Account_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="View_Punter_Account_EnabledCtrl">
+        <li>View_Punter_Account_Enabled</li>
+      </button>
+    </h2>
+    <div id="View_Punter_Account_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="View_Punter_Account_Enabled" 
+	data-bs-parent="#accordionView_Punter_Account_Enabled">
+      <div class="accordion-body">
+View a punter account
+	</div>
+</div>
+</div>
+</div> 
+ 
+ <div class="accordion" id="accordionView_Punter_Transaction_Permission_Disabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="View_Punter_Transaction_Permission_Disabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#View_Punter_Transaction_Permission_DisabledCtrl" 
+	  aria-expanded="true" aria-controls="View_Punter_Transaction_Permission_DisabledCtrl">
+        <li>View_Punter_Transaction_Permission_Disabled</li>
+      </button>
+    </h2>
+    <div id="View_Punter_Transaction_Permission_DisabledCtrl" class="accordion-collapse collapse" aria-labelledby="View_Punter_Transaction_Permission_Disabled" 
+	data-bs-parent="#accordionView_Punter_Transaction_Permission_Disabled">
+      <div class="accordion-body">
+View punter transactions permission disabled.
+	</div>
+</div>
+</div>
+</div> 
+ 
+<div class="accordion" id="accordionView_Punter_Transaction_Permission_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="View_Punter_Transaction_Permission_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#View_Punter_Transaction_Permission_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="View_Punter_Transaction_Permission_EnabledCtrl">
+        <li>View_Punter_Transaction_Permission_Enabled</li>
+      </button>
+    </h2>
+    <div id="View_Punter_Transaction_Permission_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="View_Punter_Transaction_Permission_Enabled" 
+	data-bs-parent="#accordionView_Punter_Transaction_Permission_Enabled">
+      <div class="accordion-body">
+No method information provided.
+	</div>
+</div>
+</div>
+</div> 
+ 
+ <div class="accordion" id="accordionView_Status_Punter_Account_Disabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="View_Status_Punter_Account_Disabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#View_Status_Punter_Account_DisabledCtrl" 
+	  aria-expanded="true" aria-controls="View_Status_Punter_Account_DisabledCtrl">
+        <li>View_Status_Punter_Account_Disabled</li>
+      </button>
+    </h2>
+    <div id="View_Status_Punter_Account_DisabledCtrl" class="accordion-collapse collapse" aria-labelledby="View_Status_Punter_Account_Disabled" 
+	data-bs-parent="#accordionView_Status_Punter_Account_Disabled">
+      <div class="accordion-body">
+View a punter account status permission disabled.
+	</div>
+</div>
+</div>
+</div> 
+ 
+ <div class="accordion" id="accordionWithDraw_Funds_From_Punter_Disabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="WithDraw_Funds_From_Punter_Disabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#WithDraw_Funds_From_Punter_DisabledCtrl" 
+	  aria-expanded="true" aria-controls="WithDraw_Funds_From_Punter_DisabledCtrl">
+        <li>WithDraw_Funds_From_Punter_Disabled</li>
+      </button>
+    </h2>
+    <div id="WithDraw_Funds_From_Punter_DisabledCtrl" class="accordion-collapse collapse" aria-labelledby="WithDraw_Funds_From_Punter_Disabled" 
+	data-bs-parent="#accordionWithDraw_Funds_From_Punter_Disabled">
+      <div class="accordion-body">
+This test ensures the punter Withdraw funds permission correctly allows for the withdrawal of funds.
+	</div>
+</div>
+</div>
+</div> 
+ 
+ <div class="accordion" id="accordionWithDraw_Funds_From_Punter_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="WithDraw_Funds_From_Punter_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#WithDraw_Funds_From_Punter_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="WithDraw_Funds_From_Punter_EnabledCtrl">
+        <li>WithDraw_Funds_From_Punter_Enabled</li>
+      </button>
+    </h2>
+    <div id="WithDraw_Funds_From_Punter_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="WithDraw_Funds_From_Punter_Enabled" 
+	data-bs-parent="#accordionWithDraw_Funds_From_Punter_Enabled">
+      <div class="accordion-body">
+This test ensures the punter Withdraw funds permission correctly allows for the withdrawal of funds.
+	</div>
+</div>
+</div>
+</div> 
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionQuickSearchCodeTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="QuickSearchCodeTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#QuickSearchCodeTestsCtrl" 
+	  aria-expanded="true" aria-controls="QuickSearchCodeTestsCtrl">
+        <li>QuickSearchCodeTests</li>
+		<span class="badge badge-dark" id="QuickSearchCodeTests_Span"></span>
+      </button>
+    </h2>
+    <div id="QuickSearchCodeTestsCtrl" class="accordion-collapse collapse" aria-labelledby="QuickSearchCodeTests" 
+	data-bs-parent="#accordionQuickSearchCodeTests">
+      <div class="accordion-body">
+<ol id="QuickSearchCodeTests1">
+<div class="accordion" id="accordionSearch_For_And_Wager_On_Sport_Fixture_QuickSearchCode">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Search_For_And_Wager_On_Sport_Fixture_QuickSearchCode">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Search_For_And_Wager_On_Sport_Fixture_QuickSearchCodeCtrl" 
+	  aria-expanded="true" aria-controls="Search_For_And_Wager_On_Sport_Fixture_QuickSearchCodeCtrl">
+       <li>Search_For_And_Wager_On_Sport_Fixture_QuickSearchCode</li>
+      </button>
+    </h2>
+    <div id="Search_For_And_Wager_On_Sport_Fixture_QuickSearchCodeCtrl" class="accordion-collapse collapse" aria-labelledby="Search_For_And_Wager_On_Sport_Fixture_QuickSearchCode" 
+	data-bs-parent="#accordionSearch_For_And_Wager_On_Sport_Fixture_QuickSearchCode">
+      <div class="accordion-body">
+Searches for and wages on a sport fixture by quick search code.
+	</div>
+</div>
+</div>
+</div> 
+
+<div class="accordion" id="accordionSearch_For_And_Wager_On_Sport_Fixture_Selection_QuickSearchCode">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Search_For_And_Wager_On_Sport_Fixture_Selection_QuickSearchCode">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Search_For_And_Wager_On_Sport_Fixture_Selection_QuickSearchCodeCtrl" 
+	  aria-expanded="true" aria-controls="Search_For_And_Wager_On_Sport_Fixture_Selection_QuickSearchCodeCtrl">
+       <li>Search_For_And_Wager_On_Sport_Fixture_Selection_QuickSearchCode</li>
+      </button>
+    </h2>
+    <div id="Search_For_And_Wager_On_Sport_Fixture_Selection_QuickSearchCodeCtrl" class="accordion-collapse collapse" aria-labelledby="Search_For_And_Wager_On_Sport_Fixture_Selection_QuickSearchCode" 
+	data-bs-parent="#accordionSearch_For_And_Wager_On_Sport_Fixture_Selection_QuickSearchCode">
+      <div class="accordion-body">
+Searches for and wages on a sport fixture by quick search code.
+	</div>
+</div>
+</div>
+</div> 
+</ol>
+	</div>
+</div>
+</div>
+</div> 
+
+<div class="accordion" id="accordionRepeatBetTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RepeatBetTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RepeatBetTestsCtrl" 
+	  aria-expanded="true" aria-controls="RepeatBetTestsCtrl">
+        <li>RepeatBetTests</li>
+		<span class="badge badge-dark" id="RepeatBetTests_Span"></span>
+      </button>
+    </h2>
+    <div id="RepeatBetTestsCtrl" class="accordion-collapse collapse" aria-labelledby="RepeatBetTests" 
+	data-bs-parent="#accordionRepeatBetTests">
+      <div class="accordion-body">
+<ol id="RepeatBetTests1">
+<div class="accordion" id="accordionRepeat_Lotto_Bet_Using_Dash_R">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Repeat_Lotto_Bet_Using_Dash_R">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Repeat_Lotto_Bet_Using_Dash_RCtrl" 
+	  aria-expanded="true" aria-controls="Repeat_Lotto_Bet_Using_Dash_RCtrl">
+        <li>Repeat_Lotto_Bet_Using_Dash_R</li>
+      </button>
+    </h2>
+    <div id="Repeat_Lotto_Bet_Using_Dash_RCtrl" class="accordion-collapse collapse" aria-labelledby="Repeat_Lotto_Bet_Using_Dash_R" 
+	data-bs-parent="#accordionRepeat_Lotto_Bet_Using_Dash_R">
+      <div class="accordion-body">
+Repeat a lotto bet by using the dash "R" request.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionRepeat_Lotto_Multiple_Bet_Using_Dash_R">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Repeat_Lotto_Multiple_Bet_Using_Dash_R">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Repeat_Lotto_Multiple_Bet_Using_Dash_RCtrl" 
+	  aria-expanded="true" aria-controls="Repeat_Lotto_Multiple_Bet_Using_Dash_RCtrl">
+        <li>Repeat_Lotto_Multiple_Bet_Using_Dash_R</li>
+      </button>
+    </h2>
+    <div id="Repeat_Lotto_Multiple_Bet_Using_Dash_RCtrl" class="accordion-collapse collapse" aria-labelledby="Repeat_Lotto_Multiple_Bet_Using_Dash_R" 
+	data-bs-parent="#accordionRepeat_Lotto_Multiple_Bet_Using_Dash_R">
+      <div class="accordion-body">
+Repeat a multiple lotto bet by using the dash "R" request.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionRepeatLottoBetsUsingF3">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RepeatLottoBetsUsingF3">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RepeatLottoBetsUsingF3Ctrl" 
+	  aria-expanded="true" aria-controls="RepeatLottoBetsUsingF3Ctrl">
+        <li>RepeatLottoBetsUsingF3</li>
+      </button>
+    </h2>
+    <div id="RepeatLottoBetsUsingF3Ctrl" class="accordion-collapse collapse" aria-labelledby="RepeatLottoBetsUsingF3" 
+	data-bs-parent="#accordionRepeatLottoBetsUsingF3">
+      <div class="accordion-body">
+This lays a lotto bet then calls the F3 function to repeat the bet.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionRepeatLottoBetUsingDashLOnResultedDraw">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RepeatLottoBetUsingDashLOnResultedDraw">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RepeatLottoBetUsingDashLOnResultedDrawCtrl" 
+	  aria-expanded="true" aria-controls="RepeatLottoBetUsingDashLOnResultedDrawCtrl">
+        <li>RepeatLottoBetUsingDashLOnResultedDraw</li>
+      </button>
+    </h2>
+    <div id="RepeatLottoBetUsingDashLOnResultedDrawCtrl" class="accordion-collapse collapse" aria-labelledby="RepeatLottoBetUsingDashLOnResultedDraw" 
+	data-bs-parent="#accordionRepeatLottoBetUsingDashLOnResultedDraw">
+      <div class="accordion-body">
+Repeat a lotto bet using the Dash "L" key method on and already resulted draw.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionRepeatMultipleLottoBetsUsingF3">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RepeatMultipleLottoBetsUsingF3">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RepeatMultipleLottoBetsUsingF3Ctrl" 
+	  aria-expanded="true" aria-controls="RepeatMultipleLottoBetsUsingF3Ctrl">
+        <li>RepeatMultipleLottoBetsUsingF3</li>
+      </button>
+    </h2>
+    <div id="RepeatMultipleLottoBetsUsingF3Ctrl" class="accordion-collapse collapse" aria-labelledby="RepeatMultipleLottoBetsUsingF3" 
+	data-bs-parent="#accordionRepeatMultipleLottoBetsUsingF3">
+      <div class="accordion-body">
+This lays a lotto bet then calls the F3 function to repeat the bet.
+</div>
+</div>
+</div>
+</div>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionRiskRulesTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="RiskRulesTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#RiskRulesTestsCtrl" 
+	  aria-expanded="true" aria-controls="RiskRulesTestsCtrl">
+        <li>RiskRulesTests</li>
+		<span class="badge badge-dark" id="RiskRulesTests_Span"></span>
+      </button>
+    </h2>
+    <div id="RiskRulesTestsCtrl" class="accordion-collapse collapse" aria-labelledby="RiskRulesTests" 
+	data-bs-parent="#accordionRiskRulesTests">
+      <div class="accordion-body">
+<ol id="RiskRulesTests1">
+<div class="accordion" id="accordionMaximumLiabilityEnforcedAtGlobalLevel">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="MaximumLiabilityEnforcedAtGlobalLevel">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#MaximumLiabilityEnforcedAtGlobalLevelCtrl" 
+	  aria-expanded="true" aria-controls="MaximumLiabilityEnforcedAtGlobalLevelCtrl">
+        <li>MaximumLiabilityEnforcedAtGlobalLevel</li>
+      </button>
+    </h2>
+    <div id="MaximumLiabilityEnforcedAtGlobalLevelCtrl" class="accordion-collapse collapse" aria-labelledby="MaximumLiabilityEnforcedAtGlobalLevel" 
+	data-bs-parent="#accordionMaximumLiabilityEnforcedAtGlobalLevel">
+      <div class="accordion-body">
+12194</br>This test ensures that the Maximum Liability setting on the Global level is enforced when attempting to lay a bet.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionMaximumLiabilityWithCancelledBet">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="MaximumLiabilityWithCancelledBet">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#MaximumLiabilityWithCancelledBetCtrl" 
+	  aria-expanded="true" aria-controls="MaximumLiabilityWithCancelledBetCtrl">
+        <li>MaximumLiabilityWithCancelledBet</li>
+      </button>
+    </h2>
+    <div id="MaximumLiabilityWithCancelledBetCtrl" class="accordion-collapse collapse" aria-labelledby="MaximumLiabilityWithCancelledBet" 
+	data-bs-parent="#accordionMaximumLiabilityWithCancelledBet">
+      <div class="accordion-body">
+Max Liability limit affected by cancelled bets.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionRelated_Bet">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Related_Bet">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Related_BetCtrl" 
+	  aria-expanded="true" aria-controls="Related_BetCtrl">
+        <li>Related_Bet</li>
+      </button>
+    </h2>
+    <div id="Related_BetCtrl" class="accordion-collapse collapse" aria-labelledby="Related_Bet" 
+	data-bs-parent="#accordionRelated_Bet">
+      <div class="accordion-body">
+Tests if Related bets rule prevents betting.
+</div>
+</div>
+</div>
+</div>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionSetupTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="SetupTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#SetupTestsCtrl" 
+	  aria-expanded="true" aria-controls="SetupTestsCtrl">
+        <li>SetupTests</li>
+		<span class="badge badge-dark" id="SetupTests_Span"></span>
+      </button>
+    </h2>
+    <div id="SetupTestsCtrl" class="accordion-collapse collapse" aria-labelledby="SetupTests" 
+	data-bs-parent="#accordionSetupTests">
+      <div class="accordion-body">
+<ol id="SetupTests1">
+<div class="accordion" id="accordionPlace_Lotto_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_Dashboard">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place_Lotto_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_Dashboard">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place_Lotto_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_DashboardCtrl" 
+	  aria-expanded="true" aria-controls="Place_Lotto_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_DashboardCtrl">
+        <li>Place_Lotto_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_Dashboard</li>
+      </button>
+    </h2>
+    <div id="Place_Lotto_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_DashboardCtrl" class="accordion-collapse collapse" aria-labelledby="Place_Lotto_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_Dashboard" 
+	data-bs-parent="#accordionPlace_Lotto_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_Dashboard">
+      <div class="accordion-body">
+No method information provided.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionPlace_Sport_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_Dashboard">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Place_Sport_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_Dashboard">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Place_Sport_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_DashboardCtrl" 
+	  aria-expanded="true" aria-controls="Place_Sport_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_DashboardCtrl">
+        <li>Place_Sport_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_Dashboard</li>
+      </button>
+    </h2>
+    <div id="Place_Sport_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_DashboardCtrl" class="accordion-collapse collapse" aria-labelledby="Place_Sport_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_Dashboard" 
+	data-bs-parent="#accordionPlace_Sport_Bet_Cancel_It_Check_Fixture_Codes_TicketLookup_BetReport_Cash_Dashboard">
+      <div class="accordion-body">
+No method information provided.
+</div>
+</div>
+</div>
+</div>
+
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionSigEventsTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="SigEventsTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#SigEventsTestsCtrl" 
+	  aria-expanded="true" aria-controls="SigEventsTestsCtrl">
+        <li>SigEventsTests</li>
+		<span class="badge badge-dark" id="SigEventsTests_Span"></span>
+      </button>
+    </h2>
+    <div id="SigEventsTestsCtrl" class="accordion-collapse collapse" aria-labelledby="SigEventsTests" 
+	data-bs-parent="#accordionSigEventsTests">
+      <div class="accordion-body">
+<ol id="SigEventsTests1">
+<div class="accordion" id="accordionAbandon_Draw_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Abandon_Draw_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Abandon_Draw_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="Abandon_Draw_In_Sig_EventsCtrl">
+        <li>Abandon_Draw_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="Abandon_Draw_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="Abandon_Draw_In_Sig_Events" 
+	data-bs-parent="#accordionAbandon_Draw_In_Sig_Events">
+      <div class="accordion-body">
+abandon draw in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionAbort_Bet_In_Sig_Event">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Abort_Bet_In_Sig_Event">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Abort_Bet_In_Sig_EventCtrl" 
+	  aria-expanded="true" aria-controls="Abort_Bet_In_Sig_EventCtrl">
+        <li>Abort_Bet_In_Sig_Event</li>
+      </button>
+    </h2>
+    <div id="Abort_Bet_In_Sig_EventCtrl" class="accordion-collapse collapse" aria-labelledby="Abort_Bet_In_Sig_Event" 
+	data-bs-parent="#accordionAbort_Bet_In_Sig_Event">
+      <div class="accordion-body">
+Abort bet in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionBonus_Stretch_Change_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Bonus_Stretch_Change_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Bonus_Stretch_Change_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="Bonus_Stretch_Change_In_Sig_EventsCtrl">
+        <li>Bonus_Stretch_Change_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="Bonus_Stretch_Change_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="Bonus_Stretch_Change_In_Sig_Events" 
+	data-bs-parent="#accordionBonus_Stretch_Change_In_Sig_Events">
+      <div class="accordion-body">
+Bonus stretch change recorded in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionCancel_Bet_Any_Permission_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Cancel_Bet_Any_Permission_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Cancel_Bet_Any_Permission_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="Cancel_Bet_Any_Permission_In_Sig_EventsCtrl">
+        <li>Cancel_Bet_Any_Permission_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="Cancel_Bet_Any_Permission_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="Cancel_Bet_Any_Permission_In_Sig_Events" 
+	data-bs-parent="#accordionCancel_Bet_Any_Permission_In_Sig_Events">
+      <div class="accordion-body">
+cancel bet in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionChange_User_Password_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Change_User_Password_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Change_User_Password_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="Change_User_Password_In_Sig_EventsCtrl">
+        <li>Change_User_Password_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="Change_User_Password_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="Change_User_Password_In_Sig_Events" 
+	data-bs-parent="#accordionChange_User_Password_In_Sig_Events">
+      <div class="accordion-body">
+Change user password in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionDismiss_User_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Dismiss_User_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Dismiss_User_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="Dismiss_User_In_Sig_EventsCtrl">
+        <li>Dismiss_User_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="Dismiss_User_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="Dismiss_User_In_Sig_Events" 
+	data-bs-parent="#accordionDismiss_User_In_Sig_Events">
+      <div class="accordion-body">
+Dismiss user in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionInvalid_Login_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Invalid_Login_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Invalid_Login_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="Invalid_Login_In_Sig_EventsCtrl">
+        <li>Invalid_Login_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="Invalid_Login_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="Invalid_Login_In_Sig_Events" 
+	data-bs-parent="#accordionInvalid_Login_In_Sig_Events">
+      <div class="accordion-body">
+Invalid login recorded in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionPay_out_Bet_Without_Pin_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Pay_out_Bet_Without_Pin_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Pay_out_Bet_Without_Pin_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="Pay_out_Bet_Without_Pin_In_Sig_EventsCtrl">
+        <li>Pay_out_Bet_Without_Pin_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="Pay_out_Bet_Without_Pin_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="Pay_out_Bet_Without_Pin_In_Sig_Events" 
+	data-bs-parent="#accordionPay_out_Bet_Without_Pin_In_Sig_Events">
+      <div class="accordion-body">
+Payout bet without PIN recorded in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionReset_User_Password_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Reset_User_Password_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Reset_User_Password_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="Reset_User_Password_In_Sig_EventsCtrl">
+        <li>Reset_User_Password_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="Reset_User_Password_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="Reset_User_Password_In_Sig_Events" 
+	data-bs-parent="#accordionReset_User_Password_In_Sig_Events">
+      <div class="accordion-body">
+Reset user password in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionRevert_Lotto_Result_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Revert_Lotto_Result_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Revert_Lotto_Result_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="Revert_Lotto_Result_In_Sig_EventsCtrl">
+        <li>Revert_Lotto_Result_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="Revert_Lotto_Result_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="Revert_Lotto_Result_In_Sig_Events" 
+	data-bs-parent="#accordionRevert_Lotto_Result_In_Sig_Events">
+      <div class="accordion-body">
+Revert lotto result recorded in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionRisk_Rules_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Risk_Rules_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Risk_Rules_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="Risk_Rules_In_Sig_EventsCtrl">
+        <li>Risk_Rules_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="Risk_Rules_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="Risk_Rules_In_Sig_Events" 
+	data-bs-parent="#accordionRisk_Rules_In_Sig_Events">
+      <div class="accordion-body">
+Adding risk rules in Sig Events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionUpdate_And_Delete_Odds_Profile_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Update_And_Delete_Odds_Profile_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Update_And_Delete_Odds_Profile_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="Update_And_Delete_Odds_Profile_In_Sig_EventsCtrl">
+        <li>Update_And_Delete_Odds_Profile_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="Update_And_Delete_Odds_Profile_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="Update_And_Delete_Odds_Profile_In_Sig_Events" 
+	data-bs-parent="#accordionUpdate_And_Delete_Odds_Profile_In_Sig_Events">
+      <div class="accordion-body">
+Update and delete odds profiles in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionUser_Branch_Change_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="User_Branch_Change_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#User_Branch_Change_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="User_Branch_Change_In_Sig_EventsCtrl">
+        <li>User_Branch_Change_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="User_Branch_Change_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="User_Branch_Change_In_Sig_Events" 
+	data-bs-parent="#accordionUser_Branch_Change_In_Sig_Events">
+      <div class="accordion-body">
+User branch change recorded in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionUser_Change_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="User_Change_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#User_Change_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="User_Change_In_Sig_EventsCtrl">
+        <li>User_Change_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="User_Change_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="User_Change_In_Sig_Events" 
+	data-bs-parent="#accordionUser_Change_In_Sig_Events">
+      <div class="accordion-body">
+User change recoreded in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionUser_Login_In_Sig_Events">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="User_Login_In_Sig_Events">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#User_Login_In_Sig_EventsCtrl" 
+	  aria-expanded="true" aria-controls="User_Login_In_Sig_EventsCtrl">
+        <li>User_Login_In_Sig_Events</li>
+      </button>
+    </h2>
+    <div id="User_Login_In_Sig_EventsCtrl" class="accordion-collapse collapse" aria-labelledby="User_Login_In_Sig_Events" 
+	data-bs-parent="#accordionUser_Login_In_Sig_Events">
+      <div class="accordion-body">
+User login recorded in sig events.
+</div>
+</div>
+</div>
+</div>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionStretchPercentageTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="StretchPercentageTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#StretchPercentageTestsCtrl" 
+	  aria-expanded="true" aria-controls="StretchPercentageTestsCtrl">
+        <li>StretchPercentageTests</li>
+		<span class="badge badge-dark" id="StretchPercentageTests_Span"></span>
+      </button>
+    </h2>
+    <div id="StretchPercentageTestsCtrl" class="accordion-collapse collapse" aria-labelledby="StretchPercentageTests" 
+	data-bs-parent="#accordionStretchPercentageTests">
+      <div class="accordion-body">
+<ol id="StretchPercentageTests1">
+<div class="accordion" id="accordionBonus_Stretch_Only_Applies_To_Last_Leg">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Bonus_Stretch_Only_Applies_To_Last_Leg">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Bonus_Stretch_Only_Applies_To_Last_LegCtrl" 
+	  aria-expanded="true" aria-controls="Bonus_Stretch_Only_Applies_To_Last_LegCtrl">
+        <li>Bonus_Stretch_Only_Applies_To_Last_Leg</li>
+      </button>
+    </h2>
+    <div id="Bonus_Stretch_Only_Applies_To_Last_LegCtrl" class="accordion-collapse collapse" aria-labelledby="Bonus_Stretch_Only_Applies_To_Last_Leg" 
+	data-bs-parent="#accordionBonus_Stretch_Only_Applies_To_Last_Leg">
+      <div class="accordion-body">
+User login recorded in sig events.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionBonus_Stretch_Only_Revert_Scratching">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Bonus_Stretch_Only_Revert_Scratching">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Bonus_Stretch_Only_Revert_ScratchingCtrl" 
+	  aria-expanded="true" aria-controls="Bonus_Stretch_Only_Revert_ScratchingCtrl">
+        <li>Bonus_Stretch_Only_Revert_Scratching</li>
+      </button>
+    </h2>
+    <div id="Bonus_Stretch_Only_Revert_ScratchingCtrl" class="accordion-collapse collapse" aria-labelledby="Bonus_Stretch_Only_Revert_Scratching" 
+	data-bs-parent="#accordionBonus_Stretch_Only_Revert_Scratching">
+      <div class="accordion-body">
+This test ensures that if a leg is scratched, the bonus percentage then becomes that of a bet with appropriate number of balls.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionBonus_Stretch_Percentage_Is_Applied">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Bonus_Stretch_Percentage_Is_Applied">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Bonus_Stretch_Percentage_Is_AppliedCtrl" 
+	  aria-expanded="true" aria-controls="Bonus_Stretch_Percentage_Is_AppliedCtrl">
+        <li>Bonus_Stretch_Percentage_Is_Applied</li>
+      </button>
+    </h2>
+    <div id="Bonus_Stretch_Percentage_Is_AppliedCtrl" class="accordion-collapse collapse" aria-labelledby="Bonus_Stretch_Percentage_Is_Applied" 
+	data-bs-parent="#accordionBonus_Stretch_Percentage_Is_Applied">
+      <div class="accordion-body">
+This test checks that when a bonus stretch is applied to a sport, then bets under that sport apply the bonus stretch set
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionBonus_Stretch_Result_Out_Of_Order">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Bonus_Stretch_Result_Out_Of_Order">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Bonus_Stretch_Result_Out_Of_OrderCtrl" 
+	  aria-expanded="true" aria-controls="Bonus_Stretch_Result_Out_Of_OrderCtrl">
+        <li>Bonus_Stretch_Result_Out_Of_Order</li>
+      </button>
+    </h2>
+    <div id="Bonus_Stretch_Result_Out_Of_OrderCtrl" class="accordion-collapse collapse" aria-labelledby="Bonus_Stretch_Result_Out_Of_Order" 
+	data-bs-parent="#accordionBonus_Stretch_Result_Out_Of_Order">
+      <div class="accordion-body">
+This test checks that when a bonus stretch is applied to a sport, then bets under that sport apply the bonus stretch set
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionBonusStretchFieldsheetCalculations">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="BonusStretchFieldsheetCalculations">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#BonusStretchFieldsheetCalculationsCtrl" 
+	  aria-expanded="true" aria-controls="BonusStretchFieldsheetCalculationsCtrl">
+        <li>BonusStretchFieldsheetCalculations</li>
+      </button>
+    </h2>
+    <div id="BonusStretchFieldsheetCalculationsCtrl" class="accordion-collapse collapse" aria-labelledby="BonusStretchFieldsheetCalculations" 
+	data-bs-parent="#accordionBonusStretchFieldsheetCalculations">
+      <div class="accordion-body">
+This test ensures that searching a ticket lookup up via the Fieldsheet will return the correct price, that includes the bonus stretch. After placing and resulting a multi-leg bet, the test will return a bet report for the market of the, last leg and compared it to a bet report lookup of the same leg, ensure that both are identical and have, the correct bonus stretch added to the price.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionBonusStretchTaxReportCalculations">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="BonusStretchTaxReportCalculations">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#BonusStretchTaxReportCalculationsCtrl" 
+	  aria-expanded="true" aria-controls="BonusStretchTaxReportCalculationsCtrl">
+        <li>BonusStretchTaxReportCalculations</li>
+      </button>
+    </h2>
+    <div id="BonusStretchTaxReportCalculationsCtrl" class="accordion-collapse collapse" aria-labelledby="BonusStretchTaxReportCalculations" 
+	data-bs-parent="#accordionBonusStretchTaxReportCalculations">
+      <div class="accordion-body">
+Test to ensure the tax report correctly calculates its values.
+</div>
+</div>
+</div>
+</div>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionWageringPermissionsTests">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="WageringPermissionsTests">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#WageringPermissionsTestsCtrl" 
+	  aria-expanded="true" aria-controls="WageringPermissionsTestsCtrl">
+        <li>WageringPermissionsTests</li>
+		<span class="badge badge-dark" id="WageringPermissionsTests_Span"></span>
+      </button>
+    </h2>
+    <div id="WageringPermissionsTestsCtrl" class="accordion-collapse collapse" aria-labelledby="WageringPermissionsTests" 
+	data-bs-parent="#accordionWageringPermissionsTests">
+      <div class="accordion-body">
+<ol id="WageringPermissionsTests1">
+<div class="accordion" id="accordionCancelAnyBetPermissionEnabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="CancelAnyBetPermissionEnabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#CancelAnyBetPermissionEnabledCtrl" 
+	  aria-expanded="true" aria-controls="CancelAnyBetPermissionEnabledCtrl">
+        <li>CancelAnyBetPermissionEnabled</li>
+      </button>
+    </h2>
+    <div id="CancelAnyBetPermissionEnabledCtrl" class="accordion-collapse collapse" aria-labelledby="CancelAnyBetPermissionEnabled" 
+	data-bs-parent="#accordionCancelAnyBetPermissionEnabled">
+      <div class="accordion-body">
+This test will check that when the "Cancel Any Bets" Permission is enabled, the user can cancel bets laid in any part of the system.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionPay_Companys_Bet_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Pay_Companys_Bet_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Pay_Companys_Bet_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Pay_Companys_Bet_EnabledCtrl">
+        <li>Pay_Companys_Bet_Enabled</li>
+      </button>
+    </h2>
+    <div id="Pay_Companys_Bet_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Pay_Companys_Bet_Enabled" 
+	data-bs-parent="#accordionPay_Companys_Bet_Enabled">
+      <div class="accordion-body">
+This test will check that when the "Pay Company" Permission is enabled, the user can payout bets laid within the same company.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionPay_Single_Bet_On_a_Betslip_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Pay_Single_Bet_On_a_Betslip_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Pay_Single_Bet_On_a_Betslip_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Pay_Single_Bet_On_a_Betslip_EnabledCtrl">
+        <li>Pay_Single_Bet_On_a_Betslip_Enabled</li>
+      </button>
+    </h2>
+    <div id="Pay_Single_Bet_On_a_Betslip_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Pay_Single_Bet_On_a_Betslip_Enabled" 
+	data-bs-parent="#accordionPay_Single_Bet_On_a_Betslip_Enabled">
+      <div class="accordion-body">
+This test will check that when the "Pay a single Bet" Permission is enabled, the user can payout a signle bet laid in a multiple betslip.
+</div>
+</div>
+</div>
+</div>
+
+<div class="accordion" id="accordionPay_Todays_Bets_Enabled">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="Pay_Todays_Bets_Enabled">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Pay_Todays_Bets_EnabledCtrl" 
+	  aria-expanded="true" aria-controls="Pay_Todays_Bets_EnabledCtrl">
+        <li>Pay_Todays_Bets_Enabled</li>
+      </button>
+    </h2>
+    <div id="Pay_Todays_Bets_EnabledCtrl" class="accordion-collapse collapse" aria-labelledby="Pay_Todays_Bets_Enabled" 
+	data-bs-parent="#accordionPay_Todays_Bets_Enabled">
+      <div class="accordion-body">
+This test will check that when the "Pay today's Bets" Permission is enabled, the user can payout bets laid at the current day
+</div>
+</div>
+</div>
+</div>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</ol>
+</div>
+</div>
+</body>
+<script>
+let tests1 = document.getElementById('ApiHorseRacingTests1');
+document.getElementById('ApiHorseRacingTests_Span').innerHTML = 'Total: ' + tests1.children.length;
+
+let tests2 = document.getElementById('ApiLottoTests1');
+document.getElementById('ApiLottoTests_Span').innerHTML = 'Total: ' + tests2.children.length;
+
+let tests3 = document.getElementById('ApiSpecialMultipleTests1');
+document.getElementById('ApiSpecialMultipleTests_Span').innerHTML = 'Total: ' + tests3.children.length;
+
+let tests4 = document.getElementById('ApiLottoTests1');
+document.getElementById('ApiSportTests_Span').innerHTML = 'Total: ' + tests4.children.length;
+
+let tests5 = document.getElementById('ApiUserTests1');
+document.getElementById('ApiUserTests_Span').innerHTML = 'Total: ' + tests5.children.length;
+
+let tests6 = document.getElementById('BankAccountPermissionsTests1');
+document.getElementById('BankAccountPermissionsTests_Span').innerHTML = 'Total: ' + tests6.children.length;
+
+let tests7 = document.getElementById('BankAccountPermissionsTests1');
+document.getElementById('BankAccountPermissionsTests_Span').innerHTML = 'Total: ' + tests7.children.length;
+
+let tests8 = document.getElementById('BranchAccessTests1');
+document.getElementById('BranchAccessTests_Span').innerHTML = 'Total: ' + tests8.children.length;
+
+let tests9 = document.getElementById('BranchChangeTests1');
+document.getElementById('BranchChangeTests_Span').innerHTML = 'Total: ' + tests9.children.length;
+
+let tests10 = document.getElementById('CancelBetPermissionsTests1');
+document.getElementById('CancelBetPermissionsTests_Span').innerHTML = 'Total: ' + tests10.children.length;
+
+let tests11 = document.getElementById('CancelBetslipTests1');
+document.getElementById('CancelBetslipTests_Span').innerHTML = 'Total: ' + tests11.children.length;
+
+let tests12 = document.getElementById('CashDashboardPermissionsTests1');
+document.getElementById('CashDashboardPermissionsTests_Span').innerHTML = 'Total: ' + tests12.children.length;
+
+let tests13 = document.getElementById('CashReconTests1');
+document.getElementById('CashReconTests_Span').innerHTML = 'Total: ' + tests13.children.length;
+
+let tests14 = document.getElementById('GGRTaxTests1');
+document.getElementById('GGRTaxTests_Span').innerHTML = 'Total: ' + tests14.children.length;
+
+let tests15 = document.getElementById('MixedMultipleTests1');
+document.getElementById('MixedMultipleTests_Span').innerHTML = 'Total: ' + tests15.children.length;
+
+let tests16 = document.getElementById('OddsProfileTests1');
+document.getElementById('OddsProfileTests_Span').innerHTML = 'Total: ' + tests16.children.length;
+
+let tests17 = document.getElementById('PayoutBetsPermissionsTests1');
+document.getElementById('PayoutBetsPermissionsTests_Span').innerHTML = 'Total: ' + tests17.children.length;
+
+let tests18 = document.getElementById('PunterTests1');
+document.getElementById('PunterTests_Span').innerHTML = 'Total: ' + tests18.children.length;
+
+let tests19 = document.getElementById('QuickSearchCodeTests1');
+document.getElementById('QuickSearchCodeTests_Span').innerHTML = 'Total: ' + tests19.children.length;
+
+let tests20 = document.getElementById('RepeatBetTests1');
+document.getElementById('RepeatBetTests_Span').innerHTML = 'Total: ' + tests20.children.length;
+
+let tests21 = document.getElementById('RiskRulesTests1');
+document.getElementById('RiskRulesTests_Span').innerHTML = 'Total: ' + tests21.children.length;
+
+let tests22 = document.getElementById('SetupTests1');
+document.getElementById('SetupTests_Span').innerHTML = 'Total: ' + tests22.children.length;
+
+let tests23 = document.getElementById('SigEventsTests1');
+document.getElementById('SigEventsTests_Span').innerHTML = 'Total: ' + tests23.children.length;
+
+let tests24 = document.getElementById('StretchPercentageTests1');
+document.getElementById('StretchPercentageTests_Span').innerHTML = 'Total: ' + tests24.children.length;
+
+let tests25 = document.getElementById('WageringPermissionsTests1');
+document.getElementById('WageringPermissionsTests_Span').innerHTML = 'Total: ' + tests25.children.length;
+
+</script>
+</html>
