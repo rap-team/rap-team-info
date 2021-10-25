@@ -11,7 +11,7 @@ body {
 }
 
 div#logo {
-    padding: 19px 0px 22px 27px;
+    padding: 0px 0px 0px 40px;
 }
 
 div#main {
@@ -71,15 +71,33 @@ span {
   text-align: center;
   height: 6%;
 }
+
+div#auto {
+    padding: 0px 0px 0px 332px;
+    margin: 0px 0px 0px 0px;
+    font-size: 30px;
+    color: green;
+}
+
+div#MainTests_Span {
+    margin: -46px 0px 0px 0px;
+    padding: 0px 0px 0px 988px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: green;
+}
 </style>
 </head>
 <body>
 <div id="container">
+  
 <div id="logo">
 <img src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/19000991574/logo/25C4JHSjh1t4LsWHHRaOgM535rFXMHDgDQ.png"/>
 </div>
+<div id="auto">Regression Tests</div>
+<div id="MainTests_Span"></div>
 <div id="main">
-<ol>
+<ol id="MainTests">
 <div class="accordion" id="accordionApiHorseRacingTests">
   <div class="accordion-item">  
   <h2 class="accordion-header" id="ApiHorseRacingTests">
@@ -3947,6 +3965,10 @@ document.getElementById('StretchPercentageTests_Span').innerHTML = 'Total: ' + t
 
 let tests25 = document.getElementById('WageringPermissionsTests1');
 document.getElementById('WageringPermissionsTests_Span').innerHTML = 'Total: ' + tests25.children.length;
+
+
+let mainTests = document.getElementById('MainTests');
+document.getElementById('MainTests_Span').innerHTML = 'Tests: ' + mainTests.children.length;
 
 </script>
 </html>
